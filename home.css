@@ -17,13 +17,14 @@
   background: var(--cream);
 }
 
-/* Background blobs */
+/* Background blobs — behind everything */
 .hero-blob {
   position: absolute;
   border-radius: 50%;
   filter: blur(70px);
   pointer-events: none;
   animation: blobDrift 12s ease-in-out infinite;
+  z-index: 0;
 }
 
 .b1 {
@@ -57,7 +58,7 @@
   66%      { transform: translate(-12px,14px) scale(0.97); }
 }
 
-/* Floating doodles */
+/* Floating doodles — behind content */
 .doodle {
   position: absolute;
   pointer-events: none;
@@ -65,6 +66,7 @@
   font-size: 1.2rem;
   opacity: 0.5;
   animation: doodleDrift 6s ease-in-out infinite;
+  z-index: 0;
 }
 
 .doodle-star-1 { top: 18%; left: 8%;  font-size: 1.4rem; animation-delay: 0s;    animation-duration: 5s; }
@@ -98,18 +100,28 @@
   50%      { transform: translateY(-14px) rotate(12deg); }
 }
 
-/* Rotating stamp */
+/* Rotating stamp — bottom-right, away from nav and content */
 .hero-stamp {
   position: absolute;
-  top: 120px;
-  right: 80px;
+  bottom: 80px;
+  right: 60px;
   animation: stampSpin 20s linear infinite;
-  opacity: 0.65;
+  opacity: 0.55;
+  z-index: 0;
 }
 
 @keyframes stampSpin {
   from { transform: rotate(0deg); }
   to   { transform: rotate(360deg); }
+}
+
+/* Hero inner — positioned above all decorative elements */
+.hero-inner {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Hero pill */
@@ -156,16 +168,18 @@
   margin-bottom: 4px;
 }
 
-/* Word swap */
+/* Word swap — tall enough for italic descenders, overflow clips the slide animation */
 .h1-swap-wrap {
   display: block;
-  height: 1.1em;
+  height: 1.35em;
   overflow: hidden;
+  padding-bottom: 0.15em; /* room for descenders like g, y, p */
 }
 
 .h1-swap {
   display: block;
   font-style: italic;
+  padding-bottom: 0.1em;
   background: linear-gradient(135deg, var(--gold) 0%, var(--coral) 55%, var(--lavender) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -256,12 +270,11 @@
   color: #8A6D20;
 }
 
-/* Scroll hint */
+/* Scroll hint — left-aligned so it never collides with centered content */
 .hero-scroll-hint {
   position: absolute;
   bottom: 36px;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 48px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -270,6 +283,7 @@
   letter-spacing: 0.22em;
   text-transform: uppercase;
   color: rgba(24,22,20,0.35);
+  z-index: 2;
 }
 
 .scroll-bar {
@@ -346,16 +360,18 @@
 
 .services-header {
   margin-bottom: 64px;
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 0 60px;
-  align-items: end;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
 }
+
+.services-header-left { flex-shrink: 0; }
 
 .services-header h2 {
   font-size: clamp(2.8rem, 4.5vw, 5rem);
   font-weight: 300;
-  grid-row: span 2;
   line-height: 1.08;
 }
 
@@ -371,8 +387,8 @@
   font-size: 0.95rem;
   color: rgba(24,22,20,0.55);
   line-height: 1.7;
-  max-width: 380px;
-  align-self: end;
+  max-width: 340px;
+  padding-bottom: 8px;
 }
 
 .services-grid {
