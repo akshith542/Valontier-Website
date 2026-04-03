@@ -88,15 +88,33 @@
     <!-- Right: decorative panel -->
     <div class="hero-right" aria-hidden="true">
 
-      <!-- Now open badge — top -->
+      <!-- Status badge — top left -->
       <div class="hero-sticker">
         <span class="sticker-dot"></span>
-        Now open for projects
+        Now open
       </div>
 
-      <!-- Design-direction cards — full-height diagonal composition -->
+      <!-- Rotating stamp — top right -->
+      <div class="hero-stamp">
+        <svg viewBox="0 0 140 140" width="104" height="104">
+          <defs>
+            <path id="sc" d="M 70,70 m -48,0 a 48,48 0 1,1 96,0 a 48,48 0 1,1 -96,0"/>
+          </defs>
+          <circle cx="70" cy="70" r="48" fill="none" stroke="#C8A96E" stroke-width="0.8" opacity="0.55"/>
+          <circle cx="70" cy="70" r="34" fill="none" stroke="#C8A96E" stroke-width="0.5" opacity="0.28"/>
+          <text font-size="9.8" fill="#C8A96E" letter-spacing="4.6" font-family="DM Sans, sans-serif" font-weight="400">
+            <textPath href="#sc">LUXURY WEB DESIGN · VALONTIER · </textPath>
+          </text>
+          <text x="70" y="70" text-anchor="middle" dominant-baseline="central"
+            font-size="28" fill="#C8A96E"
+            font-family="Cormorant Garamond, Georgia, serif" font-weight="600" font-style="italic">V</text>
+        </svg>
+      </div>
+
+      <!-- Primary card: Noir -->
       <div class="hcard hcard-noir">
-        <div class="hcard-eyebrow">Dark Luxury</div>
+        <div class="hcard-eyebrow">01 — Dark Luxury</div>
+        <div class="hcard-type">Aa</div>
         <div class="hcard-name">Noir</div>
         <div class="hcard-swatches">
           <span class="sw" style="background:#181614"></span>
@@ -105,42 +123,20 @@
         </div>
       </div>
 
+      <!-- Secondary card: Vivid -->
       <div class="hcard hcard-vivid">
-        <div class="hcard-eyebrow">Playful Pop</div>
+        <div class="hcard-eyebrow">02 — Playful Pop</div>
+        <div class="hcard-type">Aa</div>
         <div class="hcard-name">Vivid</div>
         <div class="hcard-swatches">
           <span class="sw" style="background:#E8623A"></span>
           <span class="sw" style="background:#D4CCE8"></span>
-          <span class="sw" style="background:#F5EDD8"></span>
+          <span class="sw" style="background:#B8C9B0"></span>
         </div>
       </div>
 
-      <div class="hcard hcard-blanc">
-        <div class="hcard-eyebrow">Pure Minimal</div>
-        <div class="hcard-name">Blanc</div>
-        <div class="hcard-swatches">
-          <span class="sw" style="background:#FDFAF5; border: 1px solid rgba(0,0,0,0.08)"></span>
-          <span class="sw" style="background:#C8A96E"></span>
-          <span class="sw" style="background:#2C2C2C"></span>
-        </div>
-      </div>
-
-      <!-- Rotating stamp — bottom corner -->
-      <div class="hero-stamp">
-        <svg viewBox="0 0 140 140" width="110" height="110">
-          <defs>
-            <path id="sc" d="M 70,70 m -48,0 a 48,48 0 1,1 96,0 a 48,48 0 1,1 -96,0"/>
-          </defs>
-          <circle cx="70" cy="70" r="48" fill="none" stroke="#C8A96E" stroke-width="0.8" opacity="0.5"/>
-          <circle cx="70" cy="70" r="34" fill="none" stroke="#C8A96E" stroke-width="0.5" opacity="0.25"/>
-          <text font-size="10" fill="#C8A96E" letter-spacing="4.8" font-family="DM Sans, sans-serif" font-weight="400">
-            <textPath href="#sc">LUXURY WEB DESIGN · VALONTIER · </textPath>
-          </text>
-          <text x="70" y="70" text-anchor="middle" dominant-baseline="central"
-            font-size="28" fill="#C8A96E"
-            font-family="Cormorant Garamond, Georgia, serif" font-weight="600" font-style="italic">V</text>
-        </svg>
-      </div>
+      <!-- Blanc micro-pill -->
+      <div class="hero-badge-blanc">✦ Blanc · Pure Minimal</div>
 
     </div>
 
