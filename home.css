@@ -136,15 +136,15 @@
 .h1-swap-wrap {
   display: block;
   font-size: clamp(4.5rem, 8.5vw, 9.5rem);
-  height: 1.35em;
+  height: 1.15em;
   overflow: hidden;
 }
 
 .h1-swap {
   display: block;
   font-style: italic;
-  line-height: 1.1;
-  padding-bottom: 0.12em;
+  line-height: 1.05;
+  padding-bottom: 0.04em;
   color: var(--gold);
   animation: swapIn 0.55s cubic-bezier(0.34,1.56,0.64,1) both;
 }
@@ -164,7 +164,7 @@
 
 /* Squiggle */
 .hero-squiggle {
-  margin: 10px 0 36px;
+  margin: 2px 0 32px;
 }
 
 /* Desc */
