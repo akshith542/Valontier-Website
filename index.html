@@ -34,116 +34,115 @@
   ══════════════════════════════════════ -->
   <section class="hero">
 
-    <!-- Bold color blob — the ONE decorative shape -->
     <div class="hero-blob-main" aria-hidden="true"></div>
 
-    <!-- Left: all the copy -->
-    <div class="hero-left">
+    <!-- Two-column grid: copy | cards -->
+    <div class="hero-grid">
 
-      <div class="hero-meta reveal">
-        <span class="hero-meta-line"></span>
-        <span>Boutique Web Design</span>
-        <span class="hero-meta-dot">✦</span>
-        <span>Est. 2026</span>
-      </div>
+      <!-- Left: copy -->
+      <div class="hero-copy">
 
-      <h1 class="hero-h1 reveal reveal-delay-1">
-        <span class="h1-top">Websites</span>
-        <span class="h1-mid">that are</span>
-        <span class="h1-swap-wrap">
-          <em class="h1-swap" id="wordSwap">beautiful.</em>
-        </span>
-      </h1>
+        <div class="hero-meta reveal">
+          <span class="hero-meta-line"></span>
+          <span>Boutique Web Design</span>
+          <span class="hero-meta-dot">·</span>
+          <span class="hero-open-tag"><span class="sticker-dot"></span>Now Open</span>
+          <span class="hero-meta-dot">·</span>
+          <span>Est. 2026</span>
+        </div>
 
-      <!-- Squiggle under swap word -->
-      <div class="hero-squiggle reveal reveal-delay-2" aria-hidden="true">
-        <svg width="260" height="16" viewBox="0 0 260 16" fill="none">
-          <path d="M2 12 C26 3, 52 16, 78 9 S128 3, 154 9 S204 16, 230 9 S252 3, 258 7"
-            stroke="url(#sq)" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-          <defs>
-            <linearGradient id="sq" x1="0" y1="0" x2="260" y2="0">
-              <stop offset="0%" stop-color="#C8860A"/>
-              <stop offset="100%" stop-color="#E8623A"/>
-            </linearGradient>
-          </defs>
-        </svg>
-      </div>
+        <h1 class="hero-h1 reveal reveal-delay-1">
+          <span class="h1-top">Websites</span>
+          <span class="h1-mid">that are</span>
+          <span class="h1-swap-wrap">
+            <em class="h1-swap" id="wordSwap">beautiful.</em>
+          </span>
+        </h1>
 
-      <p class="hero-desc reveal reveal-delay-2">
-        We're a boutique studio that obsesses over every pixel, every interaction, every word — until your website is genuinely, undeniably <em>yours.</em>
-      </p>
-
-      <div class="hero-ctas reveal reveal-delay-3">
-        <a href="signup.html" class="btn btn-primary">
-          Let's Build Something
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <div class="hero-squiggle reveal reveal-delay-2" aria-hidden="true">
+          <svg width="240" height="16" viewBox="0 0 240 16" fill="none">
+            <path d="M2 12 C24 3, 48 16, 72 9 S118 3, 142 9 S188 16, 212 9 S230 3, 238 7"
+              stroke="url(#sq)" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+            <defs>
+              <linearGradient id="sq" x1="0" y1="0" x2="240" y2="0">
+                <stop offset="0%" stop-color="#C8860A"/>
+                <stop offset="100%" stop-color="#E8623A"/>
+              </linearGradient>
+            </defs>
           </svg>
-        </a>
-        <a href="portfolio.html" class="hero-link">See Our Aesthetic →</a>
+        </div>
+
+        <p class="hero-desc reveal reveal-delay-2">
+          We're a boutique studio that obsesses over every pixel, every interaction, every word — until your website is genuinely, undeniably <em>yours.</em>
+        </p>
+
+        <div class="hero-ctas reveal reveal-delay-3">
+          <a href="portfolio.html" class="hero-link">See Our Aesthetic →</a>
+        </div>
+
+      </div>
+
+      <!-- Right: card zone -->
+      <div class="hero-card-zone" aria-hidden="true">
+
+        <!-- Rotating stamp — top right of zone -->
+        <div class="hero-stamp">
+          <svg viewBox="0 0 140 140" width="96" height="96">
+            <defs>
+              <path id="sc" d="M 70,70 m -48,0 a 48,48 0 1,1 96,0 a 48,48 0 1,1 -96,0"/>
+            </defs>
+            <circle cx="70" cy="70" r="48" fill="none" stroke="#C8A96E" stroke-width="0.8" opacity="0.5"/>
+            <circle cx="70" cy="70" r="34" fill="none" stroke="#C8A96E" stroke-width="0.5" opacity="0.25"/>
+            <text font-size="9.8" fill="#C8A96E" letter-spacing="4.6" font-family="DM Sans, sans-serif">
+              <textPath href="#sc">LUXURY WEB DESIGN · VALONTIER · </textPath>
+            </text>
+            <text x="70" y="70" text-anchor="middle" dominant-baseline="central"
+              font-size="28" fill="#C8A96E"
+              font-family="Cormorant Garamond, Georgia, serif" font-weight="600" font-style="italic">V</text>
+          </svg>
+        </div>
+
+        <!-- Primary: Noir (dominant) -->
+        <div class="hcard hcard-noir">
+          <div class="hcard-eyebrow">01 — Dark Luxury</div>
+          <div class="hcard-type">Aa</div>
+          <div class="hcard-name">Noir</div>
+          <div class="hcard-swatches">
+            <span class="sw" style="background:#181614"></span>
+            <span class="sw" style="background:#C8A96E"></span>
+            <span class="sw" style="background:#F7F3EC"></span>
+          </div>
+        </div>
+
+        <!-- Secondary: Vivid (subordinate, overlapping) -->
+        <div class="hcard hcard-vivid">
+          <div class="hcard-eyebrow">02 — Playful Pop</div>
+          <div class="hcard-name">Vivid</div>
+          <div class="hcard-swatches">
+            <span class="sw" style="background:#E8623A"></span>
+            <span class="sw" style="background:#D4CCE8"></span>
+            <span class="sw" style="background:#B8C9B0"></span>
+          </div>
+        </div>
+
       </div>
 
     </div>
 
-    <!-- Right: decorative panel -->
-    <div class="hero-right" aria-hidden="true">
-
-      <!-- Status badge — top left -->
-      <div class="hero-sticker">
-        <span class="sticker-dot"></span>
-        Now open
-      </div>
-
-      <!-- Rotating stamp — top right -->
-      <div class="hero-stamp">
-        <svg viewBox="0 0 140 140" width="104" height="104">
-          <defs>
-            <path id="sc" d="M 70,70 m -48,0 a 48,48 0 1,1 96,0 a 48,48 0 1,1 -96,0"/>
-          </defs>
-          <circle cx="70" cy="70" r="48" fill="none" stroke="#C8A96E" stroke-width="0.8" opacity="0.55"/>
-          <circle cx="70" cy="70" r="34" fill="none" stroke="#C8A96E" stroke-width="0.5" opacity="0.28"/>
-          <text font-size="9.8" fill="#C8A96E" letter-spacing="4.6" font-family="DM Sans, sans-serif" font-weight="400">
-            <textPath href="#sc">LUXURY WEB DESIGN · VALONTIER · </textPath>
-          </text>
-          <text x="70" y="70" text-anchor="middle" dominant-baseline="central"
-            font-size="28" fill="#C8A96E"
-            font-family="Cormorant Garamond, Georgia, serif" font-weight="600" font-style="italic">V</text>
+    <!-- Bottom info rail — unified system, primary CTA lives here -->
+    <div class="hero-bar">
+      <span class="bar-stat">3 Design Directions</span>
+      <span class="bar-dot">✦</span>
+      <span class="bar-dirs"><em>Noir</em> · <em>Vivid</em> · <em>Blanc</em></span>
+      <span class="bar-dot">✦</span>
+      <span class="bar-stat">Response in 24 hrs</span>
+      <div class="bar-spacer"></div>
+      <a href="signup.html" class="hero-bar-cta">
+        Start a Project
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+          <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
-      </div>
-
-      <!-- Primary card: Noir -->
-      <div class="hcard hcard-noir">
-        <div class="hcard-eyebrow">01 — Dark Luxury</div>
-        <div class="hcard-type">Aa</div>
-        <div class="hcard-name">Noir</div>
-        <div class="hcard-swatches">
-          <span class="sw" style="background:#181614"></span>
-          <span class="sw" style="background:#C8A96E"></span>
-          <span class="sw" style="background:#F7F3EC"></span>
-        </div>
-      </div>
-
-      <!-- Secondary card: Vivid -->
-      <div class="hcard hcard-vivid">
-        <div class="hcard-eyebrow">02 — Playful Pop</div>
-        <div class="hcard-type">Aa</div>
-        <div class="hcard-name">Vivid</div>
-        <div class="hcard-swatches">
-          <span class="sw" style="background:#E8623A"></span>
-          <span class="sw" style="background:#D4CCE8"></span>
-          <span class="sw" style="background:#B8C9B0"></span>
-        </div>
-      </div>
-
-      <!-- Blanc micro-pill -->
-      <div class="hero-badge-blanc">✦ Blanc · Pure Minimal</div>
-
-    </div>
-
-    <!-- Scroll hint — bottom left -->
-    <div class="hero-scroll-hint">
-      <span>scroll</span>
-      <div class="scroll-bar"><div class="scroll-thumb"></div></div>
+      </a>
     </div>
 
   </section>

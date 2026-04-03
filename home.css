@@ -7,11 +7,29 @@
 .hero {
   min-height: 100vh;
   display: flex;
-  align-items: center;
-  padding: 0 56px 0 80px;
+  flex-direction: column;
+  background: var(--ivory);
   position: relative;
   overflow: hidden;
-  background: var(--ivory);
+}
+
+/* Two-column content grid */
+.hero-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 100px 80px 48px;
+  gap: 60px;
+  position: relative;
+  z-index: 2;
+}
+
+/* Left copy column */
+.hero-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 /* ONE bold organic blob — intentional, not scattered */
@@ -59,17 +77,12 @@
   66%      { border-radius: 55% 45% 65% 35% / 40% 60% 45% 55%; }
 }
 
-/* ─── LEFT CONTENT ──────────────────────── */
-
-.hero-left {
-  flex: 0 0 auto;
-  width: clamp(380px, 50vw, 560px);
-  padding: 140px 0 100px;
-  position: relative;
-  z-index: 3;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+/* Now Open tag — inside meta line */
+.hero-open-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: rgba(24,22,20,0.52);
 }
 
 /* Meta line */
@@ -192,69 +205,24 @@
   transform: translateX(4px);
 }
 
-/* ─── RIGHT PANEL ────────────────────────────── */
+/* ─── RIGHT CARD ZONE ───────────────────────── */
 
-.hero-right {
-  flex: 1;
+.hero-card-zone {
   position: relative;
-  align-self: stretch;
-  z-index: 2;
-  min-height: 600px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 20px;
 }
 
-/* Dot-grid texture */
-.hero-right::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-image: radial-gradient(circle, rgba(200,169,110,0.1) 1.2px, transparent 1.2px);
-  background-size: 26px 26px;
-  pointer-events: none;
-  z-index: 0;
-}
-
-/* ── Status badge — top left ── */
-.hero-sticker {
-  position: absolute;
-  top: 72px;
-  left: 24px;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: var(--charcoal);
-  color: var(--gold-light);
-  border-radius: 100px;
-  padding: 9px 22px;
-  font-size: 0.65rem;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  font-weight: 400;
-  box-shadow: 0 8px 28px rgba(24,22,20,0.26);
-  z-index: 5;
-}
-
-.sticker-dot {
-  width: 6px;
-  height: 6px;
-  background: #6EE6A0;
-  border-radius: 50%;
-  animation: stickerPulse 2s ease-in-out infinite;
-  flex-shrink: 0;
-}
-
-@keyframes stickerPulse {
-  0%,100% { opacity: 1; transform: scale(1); }
-  50%      { opacity: 0.5; transform: scale(0.65); }
-}
-
-/* ── Rotating stamp — top right, mirrors badge ── */
+/* Stamp — top-right of zone */
 .hero-stamp {
   position: absolute;
-  top: 58px;
-  right: 28px;
+  top: 0;
+  right: 0;
   animation: stampSpin 26s linear infinite;
   z-index: 5;
-  opacity: 0.82;
+  opacity: 0.78;
 }
 
 @keyframes stampSpin {
@@ -262,48 +230,62 @@
   to   { transform: rotate(360deg); }
 }
 
-/* ── Design direction cards ── */
-
+/* Cards — in flow, overlapping via negative margin */
 .hcard {
-  position: absolute;
   border-radius: 24px;
   transition: transform 0.5s var(--bounce), box-shadow 0.4s;
   pointer-events: auto;
   cursor: default;
+  position: relative;
+  flex-shrink: 0;
 }
 
-.hcard:hover { z-index: 10 !important; }
-
-/* Noir — primary, large, center-right */
+/* PRIMARY — Noir: large, dominant */
 .hcard-noir {
-  width: 288px;
-  padding: 36px 36px 32px;
+  width: 290px;
+  padding: 40px 40px 36px;
   background: var(--charcoal);
-  top: 50%;
-  right: 28px;
-  transform: translateY(-58%) rotate(-5deg);
-  z-index: 3;
-  box-shadow: 0 48px 110px rgba(24,22,20,0.44), 0 0 0 1px rgba(200,169,110,0.1);
+  transform: rotate(-2.5deg);
+  z-index: 2;
+  box-shadow: 0 56px 120px rgba(24,22,20,0.42), 0 0 0 1px rgba(200,169,110,0.08);
+  margin-top: 24px;
 }
 .hcard-noir:hover {
-  transform: translateY(-62%) rotate(-2deg) scale(1.03);
-  box-shadow: 0 60px 130px rgba(24,22,20,0.5);
+  transform: rotate(-0.5deg) translateY(-12px);
+  box-shadow: 0 72px 150px rgba(24,22,20,0.5);
+  z-index: 4;
 }
 
-/* Vivid — secondary, overlaps Noir from below-left */
+/* SECONDARY — Vivid: smaller, clearly subordinate */
 .hcard-vivid {
-  width: 255px;
-  padding: 30px 32px 26px;
-  background: linear-gradient(145deg, #FCD9C5 0%, #EAD0F8 52%, #C8E2FF 100%);
-  top: 50%;
-  left: 16px;
-  transform: translateY(-8%) rotate(3.5deg);
-  z-index: 2;
-  box-shadow: 0 28px 70px rgba(180,110,90,0.2);
+  width: 210px;
+  padding: 26px 28px 22px;
+  background: linear-gradient(145deg, #FCD9C5 0%, #EAD0F8 52%, #C6E0FF 100%);
+  transform: rotate(4.5deg) translateY(52px);
+  z-index: 1;
+  box-shadow: 0 28px 72px rgba(180,100,80,0.2);
+  margin-left: -52px;
 }
 .hcard-vivid:hover {
-  transform: translateY(-14%) rotate(1deg) scale(1.03);
-  box-shadow: 0 40px 90px rgba(180,110,90,0.28);
+  transform: rotate(2deg) translateY(38px) scale(1.04);
+  z-index: 3;
+  box-shadow: 0 40px 90px rgba(180,100,80,0.28);
+}
+
+/* Now Open dot — inside meta line */
+.sticker-dot {
+  width: 6px;
+  height: 6px;
+  background: #6EE6A0;
+  border-radius: 50%;
+  display: inline-block;
+  animation: stickerPulse 2s ease-in-out infinite;
+  flex-shrink: 0;
+}
+
+@keyframes stickerPulse {
+  0%,100% { opacity: 1; transform: scale(1); }
+  50%      { opacity: 0.5; transform: scale(0.65); }
 }
 
 /* Card content */
@@ -314,103 +296,101 @@
   text-transform: uppercase;
   margin-bottom: 6px;
 }
-.hcard-noir .hcard-eyebrow  { color: rgba(247,243,236,0.36); }
-.hcard-vivid .hcard-eyebrow { color: rgba(24,22,20,0.36); }
+.hcard-noir .hcard-eyebrow { color: rgba(247,243,236,0.36); }
+.hcard-vivid .hcard-eyebrow { color: rgba(24,22,20,0.38); }
 
 .hcard-type {
   font-family: var(--font-serif);
-  font-size: 4.2rem;
+  font-size: 4.5rem;
   font-style: italic;
   font-weight: 300;
   line-height: 1;
-  margin-bottom: 2px;
+  margin-bottom: 0;
   letter-spacing: -0.02em;
+  color: rgba(200,169,110,0.13);
 }
-.hcard-noir .hcard-type  { color: rgba(200,169,110,0.15); }
-.hcard-vivid .hcard-type { color: rgba(24,22,20,0.08); }
+
+.hcard-vivid .hcard-type { display: none; }
 
 .hcard-name {
   font-family: var(--font-serif);
-  font-size: 2.8rem;
   font-weight: 300;
   font-style: italic;
   line-height: 1;
-  margin-bottom: 24px;
   letter-spacing: -0.01em;
+  margin-bottom: 22px;
 }
-.hcard-noir .hcard-name  { color: var(--gold); }
-.hcard-vivid .hcard-name { color: var(--charcoal); }
+.hcard-noir .hcard-name { font-size: 2.8rem; color: var(--gold); }
+.hcard-vivid .hcard-name { font-size: 2rem; color: var(--charcoal); margin-bottom: 16px; }
 
 .hcard-swatches { display: flex; gap: 8px; align-items: center; }
 
 .sw {
-  width: 22px;
-  height: 22px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   display: block;
   box-shadow: 0 2px 8px rgba(0,0,0,0.18);
 }
 
-/* Blanc accent pill — bottom centre */
-.hero-badge-blanc {
-  position: absolute;
-  bottom: 72px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: rgba(255,255,255,0.85);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(200,169,110,0.22);
-  border-radius: 100px;
-  padding: 9px 24px;
-  font-size: 0.6rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: rgba(24,22,20,0.42);
-  font-family: var(--font-sans);
-  box-shadow: 0 4px 20px rgba(24,22,20,0.07);
-  z-index: 4;
-  white-space: nowrap;
-}
+/* ─── HERO BOTTOM BAR ───────────────────────── */
 
-
-/* ─── SCROLL HINT ───────────────────────── */
-
-.hero-scroll-hint {
-  position: absolute;
-  bottom: 32px;
-  left: 80px;
+.hero-bar {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 8px;
-  font-size: 0.62rem;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  color: rgba(24,22,20,0.3);
+  gap: 20px;
+  padding: 18px 80px;
+  border-top: 1px solid rgba(200,169,110,0.18);
+  position: relative;
   z-index: 2;
 }
 
-.scroll-bar {
-  width: 1px;
-  height: 48px;
-  background: rgba(24,22,20,0.1);
-  position: relative;
-  overflow: hidden;
+.bar-stat {
+  font-family: var(--font-sans);
+  font-size: 0.62rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(24,22,20,0.33);
 }
 
-.scroll-thumb {
-  position: absolute;
-  top: -100%;
-  width: 100%;
-  height: 100%;
+.bar-dot { color: rgba(200,169,110,0.5); font-size: 0.55rem; }
+
+.bar-dirs {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 0.9rem;
+  color: rgba(24,22,20,0.42);
+}
+
+.bar-spacer { flex: 1; }
+
+.hero-bar-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
   background: var(--gold);
-  animation: scrollDown 2s ease-in-out infinite;
+  color: var(--charcoal);
+  border-radius: 100px;
+  padding: 13px 30px;
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 400;
+  transition: transform 0.3s var(--bounce), box-shadow 0.3s;
+  box-shadow: 0 8px 28px rgba(200,169,110,0.35);
 }
 
-@keyframes scrollDown {
-  0%   { top: -100%; }
-  100% { top: 100%; }
+.hero-bar-cta:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 44px rgba(200,169,110,0.48);
 }
+
+.hero-bar-cta svg { transition: transform 0.35s var(--bounce); }
+.hero-bar-cta:hover svg { transform: translateX(4px); }
+
+
 
 /* ─── MANIFESTO ─────────────────────────── */
 
