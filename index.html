@@ -10,10 +10,8 @@
 </head>
 <body>
 
-  <!-- Scroll Progress -->
   <div class="scroll-progress" id="scrollProgress"></div>
 
-  <!-- Navigation -->
   <nav id="navbar">
     <ul class="nav-left">
       <li><a href="index.html">Home</a></li>
@@ -31,278 +29,278 @@
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <section class="hero" id="hero">
-    <div class="hero-bg-orb orb-1"></div>
-    <div class="hero-bg-orb orb-2"></div>
-    <div class="hero-bg-orb orb-3"></div>
+  <!-- ═══════════════════════════
+       HERO
+  ════════════════════════════ -->
+  <section class="hero">
 
-    <div class="hero-content">
-      <div class="hero-badge reveal">
-        <span class="badge-dot"></span>
-        <span>Accepting new clients — 2026</span>
+    <!-- Background blobs -->
+    <div class="hero-blob b1"></div>
+    <div class="hero-blob b2"></div>
+    <div class="hero-blob b3"></div>
+    <div class="hero-blob b4"></div>
+
+    <!-- Floating decorative doodles -->
+    <div class="doodle doodle-star-1">✦</div>
+    <div class="doodle doodle-star-2">✦</div>
+    <div class="doodle doodle-star-3">✦</div>
+    <div class="doodle doodle-circle-1"></div>
+    <div class="doodle doodle-circle-2"></div>
+    <div class="doodle doodle-squiggle">〰</div>
+
+    <!-- Rotating stamp -->
+    <div class="hero-stamp">
+      <svg viewBox="0 0 120 120" width="120" height="120">
+        <defs>
+          <path id="stampCircle" d="M 60,60 m -40,0 a 40,40 0 1,1 80,0 a 40,40 0 1,1 -80,0"/>
+        </defs>
+        <text font-size="11" fill="#C8A96E" letter-spacing="4" font-family="DM Sans, sans-serif">
+          <textPath href="#stampCircle">LUXURY WEB DESIGN · VALONTIER · </textPath>
+        </text>
+        <text x="60" y="65" text-anchor="middle" font-size="22" fill="#C8A96E" font-family="TAN Pearl, Cormorant Garamond, serif">V</text>
+      </svg>
+    </div>
+
+    <div class="hero-inner">
+
+      <!-- Pill badge -->
+      <div class="hero-pill reveal">
+        <span class="pill-dot"></span>
+        Now open for founding clients
       </div>
 
-      <h1 class="hero-headline reveal reveal-delay-1">
-        <span class="line">We design</span>
-        <span class="line italic split-text">the unforgettable.</span>
+      <!-- Giant headline with word swap -->
+      <h1 class="hero-h1 reveal reveal-delay-1">
+        <span class="h1-line">Websites that are</span>
+        <span class="h1-swap-wrap">
+          <span class="h1-swap" id="wordSwap">beautiful.</span>
+        </span>
       </h1>
 
-      <p class="hero-sub reveal reveal-delay-2">
-        Luxury boutique web design for brands<br>
-        that refuse to blend in.
+      <p class="hero-desc reveal reveal-delay-2">
+        We're a boutique studio that obsesses over every pixel, every interaction, every word — until your website is genuinely, undeniably <em>yours.</em>
       </p>
 
       <div class="hero-ctas reveal reveal-delay-3">
-        <a href="portfolio.html" class="btn btn-primary">
-          View Our Work
+        <a href="signup.html" class="btn btn-primary">
+          Let's Build Something
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
             <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </a>
-        <a href="signup.html" class="btn btn-outline">Start a Project</a>
+        <a href="portfolio.html" class="btn btn-ghost">See Our Aesthetic →</a>
+      </div>
+
+      <!-- Floating tags below CTAs -->
+      <div class="hero-tags reveal reveal-delay-4">
+        <span class="htag">✦ Fully Custom</span>
+        <span class="htag">✦ Boutique Studio</span>
+        <span class="htag">✦ No Templates. Ever.</span>
       </div>
     </div>
 
-    <div class="hero-visual reveal reveal-delay-2">
-      <div class="hero-card card-main">
-        <div class="card-inner">
-          <div class="card-tag">Brand Identity</div>
-          <div class="card-title">Maison Élite</div>
-          <div class="card-line"></div>
-        </div>
-        <div class="card-blob"></div>
-      </div>
-      <div class="hero-card card-secondary">
-        <div class="card-inner">
-          <div class="card-tag">E-Commerce</div>
-          <div class="card-title">Lumière Co.</div>
-          <div class="card-line"></div>
-        </div>
-        <div class="card-blob card-blob-2"></div>
-      </div>
-      <div class="floating-pill pill-1">✦ Custom Design</div>
-      <div class="floating-pill pill-2">✦ 100% Bespoke</div>
-    </div>
-
-    <div class="hero-scroll">
-      <div class="scroll-indicator">
-        <div class="scroll-line"></div>
-      </div>
-      <span>Scroll</span>
+    <!-- Scroll hint -->
+    <div class="hero-scroll-hint">
+      <span>scroll</span>
+      <div class="scroll-bar"><div class="scroll-thumb"></div></div>
     </div>
   </section>
 
-  <!-- Marquee -->
+  <!-- ═══════════════════════════
+       MARQUEE
+  ════════════════════════════ -->
   <div class="marquee-wrap">
-    <div class="marquee-track" id="marqueeTrack">
-      <span>Luxury Web Design</span><span class="dot">·</span>
-      <span>Brand Identity</span><span class="dot">·</span>
-      <span>Digital Experiences</span><span class="dot">·</span>
-      <span>Custom Development</span><span class="dot">·</span>
-      <span>Boutique Studio</span><span class="dot">·</span>
-      <span>Valontier</span><span class="dot">·</span>
-      <span>Luxury Web Design</span><span class="dot">·</span>
-      <span>Brand Identity</span><span class="dot">·</span>
-      <span>Digital Experiences</span><span class="dot">·</span>
-      <span>Custom Development</span><span class="dot">·</span>
-      <span>Boutique Studio</span><span class="dot">·</span>
-      <span>Valontier</span><span class="dot">·</span>
+    <div class="marquee-track">
+      <span>Web Design</span><span class="dot">✦</span>
+      <span>Brand Identity</span><span class="dot">✦</span>
+      <span>Digital Experiences</span><span class="dot">✦</span>
+      <span>Custom Development</span><span class="dot">✦</span>
+      <span>Playful Luxury</span><span class="dot">✦</span>
+      <span>Valontier</span><span class="dot">✦</span>
+      <span>Web Design</span><span class="dot">✦</span>
+      <span>Brand Identity</span><span class="dot">✦</span>
+      <span>Digital Experiences</span><span class="dot">✦</span>
+      <span>Custom Development</span><span class="dot">✦</span>
+      <span>Playful Luxury</span><span class="dot">✦</span>
+      <span>Valontier</span><span class="dot">✦</span>
     </div>
   </div>
 
-  <!-- About Section -->
-  <section class="about-section">
-    <div class="about-container">
-      <div class="about-left reveal">
-        <div class="section-label">About Valontier</div>
-        <h2 class="about-headline">
-          We don't build websites.<br>
-          We build <em>worlds.</em>
-        </h2>
-        <div class="about-stats">
-          <div class="stat reveal reveal-delay-1">
-            <div class="stat-num" data-count="48" data-suffix="+">0+</div>
-            <div class="stat-label">Projects in Our Vision</div>
-          </div>
-          <div class="stat reveal reveal-delay-2">
-            <div class="stat-num" data-count="100" data-suffix="%">0%</div>
-            <div class="stat-label">Custom Code</div>
-          </div>
-          <div class="stat reveal reveal-delay-3">
-            <div class="stat-num">∞</div>
-            <div class="stat-label">Creative Possibilities</div>
-          </div>
-        </div>
-      </div>
-      <div class="about-right reveal reveal-delay-2">
-        <p class="about-body">
-          Valontier is a boutique web design studio obsessed with the intersection of luxury and personality. We believe beautiful websites shouldn't be boring — they should feel alive, feel like <em>you</em>, and convert like crazy.
-        </p>
-        <p class="about-body">
-          Every pixel we place is intentional. Every interaction is designed to delight. We partner with ambitious brands who understand that their website isn't a cost — it's their most powerful asset.
-        </p>
-        <a href="portfolio.html" class="btn btn-outline" style="margin-top: 32px;">
-          See Our Portfolio
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </a>
-      </div>
+  <!-- ═══════════════════════════
+       MANIFESTO STRIP
+  ════════════════════════════ -->
+  <section class="manifesto-section">
+    <div class="manifesto-inner">
+      <p class="manifesto-text reveal">
+        Your website is the first handshake, the first impression, the thing that makes someone stay or leave in 3 seconds. <em>It should be extraordinary.</em>
+      </p>
     </div>
-
-    <!-- Blob decoration -->
-    <div class="about-blob"></div>
+    <div class="manifesto-deco-left">✦</div>
+    <div class="manifesto-deco-right">✦</div>
   </section>
 
-  <!-- Services Section -->
+  <!-- ═══════════════════════════
+       WHAT WE DO
+  ════════════════════════════ -->
   <section class="services-section">
-    <div class="services-container">
+    <div class="services-inner">
+
       <div class="services-header reveal">
         <div class="section-label">What We Do</div>
         <h2>Every service,<br><em>elevated.</em></h2>
+        <p class="services-sub">We offer the full stack — from your very first brand mark to a live, blazing-fast website.</p>
       </div>
 
       <div class="services-grid">
-        <div class="service-card reveal">
-          <div class="service-num">01</div>
-          <div class="service-icon">◈</div>
+
+        <div class="service-card sc-gold reveal">
+          <div class="sc-num">01</div>
+          <div class="sc-glyph">◈</div>
           <h3>Brand & Identity</h3>
-          <p>Visual systems that speak before you say a word. Logo, typography, color, and the invisible thread that ties it all together.</p>
-          <div class="service-hover-line"></div>
+          <p>Visual systems that speak before you say a word. Logo, typography, colour — the invisible thread that ties it all together.</p>
         </div>
-        <div class="service-card reveal reveal-delay-1">
-          <div class="service-num">02</div>
-          <div class="service-icon">◉</div>
+
+        <div class="service-card sc-lavender reveal reveal-delay-1">
+          <div class="sc-num">02</div>
+          <div class="sc-glyph">◉</div>
           <h3>Web Design</h3>
-          <p>Pixel-perfect, fully custom websites that combine jaw-dropping aesthetics with conversion-focused design thinking.</p>
-          <div class="service-hover-line"></div>
+          <p>Pixel-perfect, fully custom websites that combine jaw-dropping aesthetics with conversion-focused thinking.</p>
         </div>
-        <div class="service-card reveal reveal-delay-2">
-          <div class="service-num">03</div>
-          <div class="service-icon">◊</div>
+
+        <div class="service-card sc-coral reveal reveal-delay-2">
+          <div class="sc-num">03</div>
+          <div class="sc-glyph">◊</div>
           <h3>Development</h3>
-          <p>Hand-coded, performance-optimized builds. No page builders, no shortcuts — just clean, elegant code that flies.</p>
-          <div class="service-hover-line"></div>
+          <p>Hand-coded, performance-optimised builds. No page builders, no shortcuts — just clean code that flies.</p>
         </div>
-        <div class="service-card reveal reveal-delay-3">
-          <div class="service-num">04</div>
-          <div class="service-icon">✦</div>
+
+        <div class="service-card sc-sage reveal reveal-delay-3">
+          <div class="sc-num">04</div>
+          <div class="sc-glyph">✦</div>
           <h3>Digital Strategy</h3>
-          <p>We map the full user journey so your site doesn't just look beautiful — it works beautifully to grow your business.</p>
-          <div class="service-hover-line"></div>
+          <p>We map the full user journey so your site doesn't just look beautiful — it works beautifully to grow your brand.</p>
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- Process Section -->
+  <!-- ═══════════════════════════
+       WHY US — FUN FACTS STRIP
+  ════════════════════════════ -->
+  <section class="why-section">
+    <div class="why-blob-bg"></div>
+    <div class="why-inner">
+      <div class="why-header reveal">
+        <div class="section-label">Why Valontier</div>
+        <h2>We're a little<br><em>obsessed.</em></h2>
+      </div>
+      <div class="why-cards">
+
+        <div class="why-card reveal">
+          <div class="why-icon">🎨</div>
+          <h3>100% Bespoke</h3>
+          <p>Every project starts with a blank canvas. We've never touched a template and we never will.</p>
+        </div>
+
+        <div class="why-card reveal reveal-delay-1">
+          <div class="why-icon">⚡</div>
+          <h3>Boutique Attention</h3>
+          <p>We keep our client roster small on purpose. When you're in, you get all of us — not a junior and a checklist.</p>
+        </div>
+
+        <div class="why-card reveal reveal-delay-2">
+          <div class="why-icon">✦</div>
+          <h3>Playful Luxury</h3>
+          <p>Beautiful doesn't have to mean boring. We mix personality with precision to create sites people actually love.</p>
+        </div>
+
+        <div class="why-card reveal reveal-delay-3">
+          <div class="why-icon">🚀</div>
+          <h3>Built to Convert</h3>
+          <p>Pretty sites that don't perform are just expensive art. Ours are designed to grow your business from day one.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════
+       PROCESS
+  ════════════════════════════ -->
   <section class="process-section">
-    <div class="process-bg"></div>
-    <div class="process-container">
+    <div class="process-inner">
+
       <div class="process-header reveal">
         <div class="section-label">Our Process</div>
-        <h2>How we<br>make magic.</h2>
+        <h2>How we<br><em>make magic.</em></h2>
       </div>
 
       <div class="process-steps">
         <div class="process-step reveal">
-          <div class="step-number">1</div>
-          <div class="step-content">
+          <div class="ps-number">01</div>
+          <div class="ps-body">
             <h3>Discovery</h3>
-            <p>We deep-dive into your brand, your audience, your ambitions. The more we know, the better we build.</p>
+            <p>We deep-dive into your brand, your audience, your wildest ambitions. The more we know, the better we build.</p>
           </div>
-          <div class="step-connector"></div>
         </div>
         <div class="process-step reveal reveal-delay-1">
-          <div class="step-number">2</div>
-          <div class="step-content">
+          <div class="ps-number">02</div>
+          <div class="ps-body">
             <h3>Concept</h3>
-            <p>We develop unique creative directions and present moodboards, art direction, and the visual strategy.</p>
+            <p>Moodboards, art direction, the full visual strategy. We show you where we're headed before we start building.</p>
           </div>
-          <div class="step-connector"></div>
         </div>
         <div class="process-step reveal reveal-delay-2">
-          <div class="step-number">3</div>
-          <div class="step-content">
-            <h3>Design</h3>
-            <p>We craft every screen with obsessive attention to detail — typography, motion, color, and spatial harmony.</p>
+          <div class="ps-number">03</div>
+          <div class="ps-body">
+            <h3>Design & Build</h3>
+            <p>We craft every screen with obsessive care — then write every line of code by hand, no shortcuts.</p>
           </div>
-          <div class="step-connector"></div>
         </div>
         <div class="process-step reveal reveal-delay-3">
-          <div class="step-number">4</div>
-          <div class="step-content">
-            <h3>Launch</h3>
-            <p>We build, test, refine, and deliver. Then we celebrate with you when the world sees what we made together.</p>
+          <div class="ps-number">04</div>
+          <div class="ps-body">
+            <h3>Launch ✦</h3>
+            <p>We test, refine, and deliver. Then we celebrate with you when the world finally sees what we made together.</p>
           </div>
         </div>
       </div>
+
     </div>
   </section>
 
-  <!-- Testimonials -->
-  <section class="testimonials-section">
-    <div class="testimonials-container">
-      <div class="section-label reveal">Client Love</div>
-      <h2 class="testimonials-headline reveal reveal-delay-1">What they say<br><em>about us.</em></h2>
-
-      <div class="testimonials-grid">
-        <div class="testimonial-card reveal">
-          <div class="quote-mark">"</div>
-          <p>"Valontier didn't just design our website — they reimagined our entire brand presence. We've tripled our inquiry rate since launch."</p>
-          <div class="testimonial-author">
-            <div class="author-avatar" style="background: var(--lavender);"></div>
-            <div>
-              <div class="author-name">Sophia Laurent</div>
-              <div class="author-title">Founder, Maison Élite</div>
-            </div>
-          </div>
-        </div>
-        <div class="testimonial-card reveal reveal-delay-1">
-          <div class="quote-mark">"</div>
-          <p>"The most thoughtful, creative studio I've ever worked with. They understood our vision before we even fully understood it ourselves."</p>
-          <div class="testimonial-author">
-            <div class="author-avatar" style="background: var(--sage);"></div>
-            <div>
-              <div class="author-name">James Whitfield</div>
-              <div class="author-title">CEO, Lumière Co.</div>
-            </div>
-          </div>
-        </div>
-        <div class="testimonial-card reveal reveal-delay-2">
-          <div class="quote-mark">"</div>
-          <p>"Stunning work. Delivered on time. Went far beyond what we imagined. Valontier is worth every single penny."</p>
-          <div class="testimonial-author">
-            <div class="author-avatar" style="background: var(--blush);"></div>
-            <div>
-              <div class="author-name">Amélie Fontaine</div>
-              <div class="author-title">Creative Director, Fontaine Studio</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA Section -->
+  <!-- ═══════════════════════════
+       BIG CTA
+  ════════════════════════════ -->
   <section class="cta-section">
     <div class="cta-blob-1"></div>
     <div class="cta-blob-2"></div>
-    <div class="cta-container reveal">
-      <div class="section-label">Ready?</div>
-      <h2 class="cta-headline">Let's build something<br><em>extraordinary.</em></h2>
-      <p class="cta-sub">We take on a limited number of projects each quarter to ensure every client gets our full, undivided attention.</p>
-      <div class="cta-buttons">
+    <div class="cta-blob-3"></div>
+
+    <div class="cta-inner reveal">
+      <div class="cta-stamp-mini">✦ Limited Spots ✦</div>
+      <h2 class="cta-h2">
+        Ready to have<br>
+        the most beautiful<br>
+        <em>website of your life?</em>
+      </h2>
+      <p class="cta-sub">We take on a handful of projects per quarter. If you're reading this, there's still a spot with your name on it.</p>
+      <div class="cta-btns">
         <a href="signup.html" class="btn btn-primary">
-          Start Your Project
+          Claim Your Spot
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
             <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </a>
-        <a href="portfolio.html" class="btn btn-outline">View Portfolio</a>
+        <a href="portfolio.html" class="btn btn-outline-light">See Our Aesthetic</a>
       </div>
     </div>
+
+    <!-- Decorative doodles -->
+    <div class="cta-doodle d1">✦</div>
+    <div class="cta-doodle d2">◊</div>
+    <div class="cta-doodle d3">◉</div>
   </section>
 
   <!-- Footer -->
@@ -331,10 +329,11 @@
     </div>
     <div class="footer-bottom">
       <span>© 2026 Valontier. All rights reserved.</span>
-      <span>Crafted with obsession ✦</span>
+      <span>Made with obsession ✦</span>
     </div>
   </footer>
 
   <script src="main.js"></script>
+  <script src="home.js"></script>
 </body>
 </html>
