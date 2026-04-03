@@ -29,81 +29,41 @@
     </div>
   </nav>
 
-  <!-- ═══════════════════════════
-       HERO
-  ════════════════════════════ -->
+  <!-- ══════════════════════════════════════
+       HERO — Editorial split layout
+  ══════════════════════════════════════ -->
   <section class="hero">
 
-    <!-- Giant watermark V -->
-    <div class="hero-watermark" aria-hidden="true">V</div>
+    <!-- Bold color blob — the ONE decorative shape -->
+    <div class="hero-blob-main" aria-hidden="true"></div>
 
-    <!-- Rotated side label -->
-    <div class="hero-side-label" aria-hidden="true">Boutique Studio · Est. 2026</div>
+    <!-- Left: all the copy -->
+    <div class="hero-left">
 
-    <!-- Background blobs -->
-    <div class="hero-blob b1"></div>
-    <div class="hero-blob b2"></div>
-    <div class="hero-blob b3"></div>
-    <div class="hero-blob b4"></div>
-
-    <!-- Floating decorative doodles -->
-    <div class="doodle doodle-star-1">✦</div>
-    <div class="doodle doodle-star-2">✦</div>
-    <div class="doodle doodle-star-3">✦</div>
-    <div class="doodle doodle-circle-1"></div>
-    <div class="doodle doodle-circle-2"></div>
-    <div class="doodle doodle-squiggle">〰</div>
-
-    <!-- Rotating stamp -->
-    <div class="hero-stamp">
-      <svg viewBox="0 0 140 140" width="140" height="140">
-        <defs>
-          <path id="stampCircle" d="M 70,70 m -48,0 a 48,48 0 1,1 96,0 a 48,48 0 1,1 -96,0"/>
-        </defs>
-        <!-- Outer ring -->
-        <circle cx="70" cy="70" r="48" fill="none" stroke="#C8A96E" stroke-width="0.75" opacity="0.5"/>
-        <!-- Inner ring -->
-        <circle cx="70" cy="70" r="34" fill="none" stroke="#C8A96E" stroke-width="0.5" opacity="0.3"/>
-        <!-- Circular text -->
-        <text font-size="10.5" fill="#C8A96E" letter-spacing="5.2" font-family="DM Sans, sans-serif">
-          <textPath href="#stampCircle">LUXURY WEB DESIGN · VALONTIER · </textPath>
-        </text>
-        <!-- V — vertically centered using dominant-baseline -->
-        <text
-          x="70" y="70"
-          text-anchor="middle"
-          dominant-baseline="central"
-          font-size="26"
-          fill="#C8A96E"
-          font-family="TAN Pearl, Cormorant Garamond, serif"
-          font-weight="700"
-        >V</text>
-      </svg>
-    </div>
-
-    <div class="hero-inner">
-
-      <!-- Pill badge -->
-      <div class="hero-pill reveal">
-        <span class="pill-dot"></span>
-        Now open for founding clients
+      <div class="hero-meta reveal">
+        <span class="hero-meta-line"></span>
+        <span>Boutique Web Design</span>
+        <span class="hero-meta-dot">✦</span>
+        <span>Est. 2026</span>
       </div>
 
-      <!-- Giant headline with word swap -->
       <h1 class="hero-h1 reveal reveal-delay-1">
-        <span class="h1-line">Websites that are</span>
+        <span class="h1-top">Websites</span>
+        <span class="h1-mid">that are</span>
         <span class="h1-swap-wrap">
-          <span class="h1-swap" id="wordSwap">beautiful.</span>
+          <em class="h1-swap" id="wordSwap">beautiful.</em>
         </span>
       </h1>
-      <div class="hero-squiggle" aria-hidden="true">
-        <svg width="220" height="14" viewBox="0 0 220 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M2 10 C20 2, 40 14, 60 7 S100 2, 120 7 S160 14, 180 7 S210 2, 218 6" stroke="url(#sg)" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+
+      <!-- Squiggle under swap word -->
+      <div class="hero-squiggle reveal reveal-delay-2" aria-hidden="true">
+        <svg width="260" height="16" viewBox="0 0 260 16" fill="none">
+          <path d="M2 12 C26 3, 52 16, 78 9 S128 3, 154 9 S204 16, 230 9 S252 3, 258 7"
+            stroke="url(#sq)" stroke-width="2.5" stroke-linecap="round" fill="none"/>
           <defs>
-            <linearGradient id="sg" x1="0" y1="0" x2="220" y2="0">
+            <linearGradient id="sq" x1="0" y1="0" x2="260" y2="0">
               <stop offset="0%" stop-color="#C8860A"/>
-              <stop offset="50%" stop-color="#E8623A"/>
-              <stop offset="100%" stop-color="#9B5FD8"/>
+              <stop offset="100%" stop-color="#E8623A"/>
             </linearGradient>
           </defs>
         </svg>
@@ -120,27 +80,59 @@
             <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </a>
-        <a href="portfolio.html" class="btn btn-ghost">See Our Aesthetic →</a>
+        <a href="portfolio.html" class="hero-link">See Our Aesthetic →</a>
       </div>
 
-      <!-- Floating tags below CTAs -->
-      <div class="hero-tags reveal reveal-delay-4">
-        <span class="htag">✦ Fully Custom</span>
-        <span class="htag">✦ Boutique Studio</span>
-        <span class="htag">✦ No Templates. Ever.</span>
-      </div>
     </div>
 
-    <!-- Scroll hint -->
+    <!-- Right: decorative panel -->
+    <div class="hero-right" aria-hidden="true">
+
+      <!-- Rotating stamp -->
+      <div class="hero-stamp">
+        <svg viewBox="0 0 140 140" width="130" height="130">
+          <defs>
+            <path id="sc" d="M 70,70 m -48,0 a 48,48 0 1,1 96,0 a 48,48 0 1,1 -96,0"/>
+          </defs>
+          <circle cx="70" cy="70" r="48" fill="none" stroke="#C8A96E" stroke-width="0.8" opacity="0.6"/>
+          <circle cx="70" cy="70" r="34" fill="none" stroke="#C8A96E" stroke-width="0.5" opacity="0.3"/>
+          <text font-size="10.5" fill="#C8A96E" letter-spacing="5.2" font-family="DM Sans, sans-serif">
+            <textPath href="#sc">LUXURY WEB DESIGN · VALONTIER · </textPath>
+          </text>
+          <text x="70" y="70" text-anchor="middle" dominant-baseline="central"
+            font-size="26" fill="#C8A96E"
+            font-family="TAN Pearl, Cormorant Garamond, serif" font-weight="700">V</text>
+        </svg>
+      </div>
+
+      <!-- Open for clients sticker -->
+      <div class="hero-sticker">
+        <span class="sticker-dot"></span>
+        Now open
+      </div>
+
+      <!-- Floating capability pills -->
+      <div class="hero-cap cap-1">✦ Fully Custom</div>
+      <div class="hero-cap cap-2">✦ No Templates</div>
+      <div class="hero-cap cap-3">✦ Bespoke Code</div>
+
+      <!-- Decorative rings -->
+      <div class="hero-ring ring-1"></div>
+      <div class="hero-ring ring-2"></div>
+
+    </div>
+
+    <!-- Scroll hint — bottom left -->
     <div class="hero-scroll-hint">
       <span>scroll</span>
       <div class="scroll-bar"><div class="scroll-thumb"></div></div>
     </div>
+
   </section>
 
-  <!-- ═══════════════════════════
+  <!-- ══════════════════════════════════════
        MARQUEE
-  ════════════════════════════ -->
+  ══════════════════════════════════════ -->
   <div class="marquee-wrap">
     <div class="marquee-track">
       <span>Web Design</span><span class="dot">✦</span>
@@ -158,25 +150,24 @@
     </div>
   </div>
 
-  <!-- ═══════════════════════════
-       MANIFESTO STRIP
-  ════════════════════════════ -->
+  <!-- ══════════════════════════════════════
+       MANIFESTO
+  ══════════════════════════════════════ -->
   <section class="manifesto-section">
     <div class="manifesto-inner">
       <p class="manifesto-text reveal">
         Your website is the first handshake, the first impression, the thing that makes someone stay or leave in 3 seconds. <em>It should be extraordinary.</em>
       </p>
     </div>
-    <div class="manifesto-deco-left">✦</div>
-    <div class="manifesto-deco-right">✦</div>
+    <div class="manifesto-deco-left" aria-hidden="true">✦</div>
+    <div class="manifesto-deco-right" aria-hidden="true">✦</div>
   </section>
 
-  <!-- ═══════════════════════════
-       WHAT WE DO
-  ════════════════════════════ -->
+  <!-- ══════════════════════════════════════
+       SERVICES
+  ══════════════════════════════════════ -->
   <section class="services-section">
     <div class="services-inner">
-
       <div class="services-header reveal">
         <div class="services-header-left">
           <div class="section-label">What We Do</div>
@@ -184,44 +175,38 @@
         </div>
         <p class="services-sub">We offer the full stack — from your very first brand mark to a live, blazing-fast website.</p>
       </div>
-
       <div class="services-grid">
-
         <div class="service-card sc-gold reveal">
           <div class="sc-num">01</div>
           <div class="sc-glyph">◈</div>
           <h3>Brand & Identity</h3>
           <p>Visual systems that speak before you say a word. Logo, typography, colour — the invisible thread that ties it all together.</p>
         </div>
-
         <div class="service-card sc-lavender reveal reveal-delay-1">
           <div class="sc-num">02</div>
           <div class="sc-glyph">◉</div>
           <h3>Web Design</h3>
           <p>Pixel-perfect, fully custom websites that combine jaw-dropping aesthetics with conversion-focused thinking.</p>
         </div>
-
         <div class="service-card sc-coral reveal reveal-delay-2">
           <div class="sc-num">03</div>
           <div class="sc-glyph">◊</div>
           <h3>Development</h3>
           <p>Hand-coded, performance-optimised builds. No page builders, no shortcuts — just clean code that flies.</p>
         </div>
-
         <div class="service-card sc-sage reveal reveal-delay-3">
           <div class="sc-num">04</div>
           <div class="sc-glyph">✦</div>
           <h3>Digital Strategy</h3>
           <p>We map the full user journey so your site doesn't just look beautiful — it works beautifully to grow your brand.</p>
         </div>
-
       </div>
     </div>
   </section>
 
-  <!-- ═══════════════════════════
-       WHY US — FUN FACTS STRIP
-  ════════════════════════════ -->
+  <!-- ══════════════════════════════════════
+       WHY US
+  ══════════════════════════════════════ -->
   <section class="why-section">
     <div class="why-blob-bg"></div>
     <div class="why-inner">
@@ -230,46 +215,39 @@
         <h2>We're a little<br><em>obsessed.</em></h2>
       </div>
       <div class="why-cards">
-
         <div class="why-card reveal">
           <div class="why-icon">🎨</div>
           <h3>100% Bespoke</h3>
           <p>Every project starts with a blank canvas. We've never touched a template and we never will.</p>
         </div>
-
         <div class="why-card reveal reveal-delay-1">
           <div class="why-icon">⚡</div>
           <h3>Boutique Attention</h3>
           <p>We keep our client roster small on purpose. When you're in, you get all of us — not a junior and a checklist.</p>
         </div>
-
         <div class="why-card reveal reveal-delay-2">
           <div class="why-icon">✦</div>
           <h3>Playful Luxury</h3>
           <p>Beautiful doesn't have to mean boring. We mix personality with precision to create sites people actually love.</p>
         </div>
-
         <div class="why-card reveal reveal-delay-3">
           <div class="why-icon">🚀</div>
           <h3>Built to Convert</h3>
           <p>Pretty sites that don't perform are just expensive art. Ours are designed to grow your business from day one.</p>
         </div>
-
       </div>
     </div>
   </section>
 
-  <!-- ═══════════════════════════
+  <!-- ══════════════════════════════════════
        PROCESS
-  ════════════════════════════ -->
+  ══════════════════════════════════════ -->
   <section class="process-section">
     <div class="process-inner">
-
       <div class="process-header reveal">
         <div class="section-label">Our Process</div>
         <h2>How we<br><em>make magic.</em></h2>
       </div>
-
       <div class="process-steps">
         <div class="process-step reveal">
           <div class="ps-number">01</div>
@@ -300,18 +278,16 @@
           </div>
         </div>
       </div>
-
     </div>
   </section>
 
-  <!-- ═══════════════════════════
-       BIG CTA
-  ════════════════════════════ -->
+  <!-- ══════════════════════════════════════
+       CTA
+  ══════════════════════════════════════ -->
   <section class="cta-section">
     <div class="cta-blob-1"></div>
     <div class="cta-blob-2"></div>
     <div class="cta-blob-3"></div>
-
     <div class="cta-inner reveal">
       <div class="cta-stamp-mini">✦ Limited Spots ✦</div>
       <h2 class="cta-h2">
@@ -330,14 +306,11 @@
         <a href="portfolio.html" class="btn btn-outline-light">See Our Aesthetic</a>
       </div>
     </div>
-
-    <!-- Decorative doodles -->
     <div class="cta-doodle d1">✦</div>
     <div class="cta-doodle d2">◊</div>
     <div class="cta-doodle d3">◉</div>
   </section>
 
-  <!-- Footer -->
   <footer>
     <div class="footer-top">
       <div class="footer-brand">
