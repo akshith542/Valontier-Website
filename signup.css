@@ -257,7 +257,7 @@ body {
   color: var(--charcoal);
   outline: none;
   transition: border-color 0.3s;
-  cursor: none;
+
   resize: none;
 }
 
@@ -327,7 +327,7 @@ body {
   color: var(--charcoal);
   outline: none;
   appearance: none;
-  cursor: none;
+
   transition: border-color 0.3s;
 }
 
@@ -353,7 +353,7 @@ body {
 }
 
 .option-card {
-  cursor: none;
+
 }
 
 .option-card input[type="radio"] {
@@ -368,7 +368,7 @@ body {
   flex-direction: column;
   gap: 10px;
   transition: all 0.3s var(--transition);
-  cursor: none;
+
 }
 
 .option-inner:hover {
@@ -406,7 +406,7 @@ body {
 }
 
 .budget-pill {
-  cursor: none;
+
 }
 
 .budget-pill input[type="radio"] {
@@ -422,7 +422,7 @@ body {
   letter-spacing: 0.05em;
   color: rgba(24, 22, 20, 0.6);
   transition: all 0.3s var(--transition);
-  cursor: none;
+
 }
 
 .budget-pill span:hover {
@@ -445,7 +445,7 @@ body {
   display: flex;
   align-items: center;
   gap: 14px;
-  cursor: none;
+
 }
 
 .checkbox-group input[type="checkbox"] {
