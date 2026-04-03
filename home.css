@@ -100,13 +100,14 @@
   50%      { transform: translateY(-14px) rotate(12deg); }
 }
 
-/* Rotating stamp — bottom-right, away from nav and content */
+/* Rotating stamp — right-center of hero, clear of all content */
 .hero-stamp {
   position: absolute;
-  bottom: 80px;
-  right: 60px;
+  top: 50%;
+  right: 72px;
+  transform: translateY(-50%);
   animation: stampSpin 20s linear infinite;
-  opacity: 0.55;
+  opacity: 0.6;
   z-index: 0;
 }
 
