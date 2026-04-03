@@ -427,7 +427,7 @@
   padding: 48px 44px;
   position: relative;
   overflow: hidden;
-  transition: transform 0.35s var(--ease), box-shadow 0.35s;
+  transition: transform 0.3s var(--ease);
   will-change: transform;
 }
 
@@ -453,10 +453,11 @@
   font-size: 2rem;
   margin-bottom: 20px;
   display: block;
-  transition: transform 0.35s var(--bounce);
+  transition: transform 0.3s var(--ease);
+  will-change: transform;
 }
 
-.service-card:hover .sc-glyph { transform: scale(1.2) rotate(12deg); }
+.service-card:hover .sc-glyph { transform: scale(1.2) rotate(10deg); }
 
 .service-card h3 {
   font-size: 1.5rem;
@@ -520,24 +521,24 @@
   border: 1px solid rgba(24,22,20,0.06);
   border-radius: 20px;
   padding: 36px 28px;
-  transition: transform 0.35s var(--ease), box-shadow 0.35s, background 0.3s;
+  transition: transform 0.3s var(--ease);
   will-change: transform;
 }
 
 .why-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 28px 60px rgba(24,22,20,0.1);
-  background: #fff;
 }
 
 .why-icon {
   font-size: 2.2rem;
   margin-bottom: 20px;
   display: block;
-  transition: transform 0.35s var(--bounce);
+  transition: transform 0.3s var(--ease);
+  will-change: transform;
 }
 
-.why-card:hover .why-icon { transform: scale(1.18) rotate(-6deg); }
+.why-card:hover .why-icon { transform: scale(1.15) rotate(-5deg); }
 
 .why-card h3 {
   font-size: 1.15rem;
