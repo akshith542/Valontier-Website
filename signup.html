@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Start a Project — Valontier</title>
+  <meta name="description" content="Ready to build something extraordinary? Tell us about your project and let's create something unforgettable together." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="signup.css" />
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <nav id="navbar">
+    <a href="index.html" class="nav-logo">V</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="signup.html">Work with Us</a></li>
+      <li><a href="signup.html" class="nav-cta">Start a Project</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- Signup Split Layout -->
+  <div class="signup-layout">
+
+    <!-- Left Panel -->
+    <div class="signup-left">
+      <div class="signup-left-content">
+        <div class="section-label" style="color: var(--gold-light);">Let's Talk</div>
+        <h1 class="signup-headline">
+          Tell us<br>
+          about your<br>
+          <em>dream.</em>
+        </h1>
+
+        <div class="signup-promises">
+          <div class="promise">
+            <div class="promise-icon">◈</div>
+            <div>
+              <div class="promise-title">Response in 24hrs</div>
+              <div class="promise-desc">We read every message personally and respond within one business day.</div>
+            </div>
+          </div>
+          <div class="promise">
+            <div class="promise-icon">◉</div>
+            <div>
+              <div class="promise-title">Free Discovery Call</div>
+              <div class="promise-desc">Your initial consultation is completely complimentary — no strings attached.</div>
+            </div>
+          </div>
+          <div class="promise">
+            <div class="promise-icon">✦</div>
+            <div>
+              <div class="promise-title">Fully Bespoke</div>
+              <div class="promise-desc">Every project we take on is 100% custom. No templates, no shortcuts.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="signup-social-proof">
+          <div class="avatar-stack">
+            <div class="av" style="background: var(--lavender);"></div>
+            <div class="av" style="background: var(--sage);"></div>
+            <div class="av" style="background: var(--blush);"></div>
+            <div class="av" style="background: var(--gold-light);"></div>
+          </div>
+          <div class="proof-text">
+            <strong>48+ brands</strong> trust Valontier<br>
+            <span>with their digital presence</span>
+          </div>
+        </div>
+
+        <!-- Decorative orbs -->
+        <div class="left-orb left-orb-1"></div>
+        <div class="left-orb left-orb-2"></div>
+      </div>
+    </div>
+
+    <!-- Right Panel — Form -->
+    <div class="signup-right">
+      <div class="form-container">
+
+        <!-- Step Indicator -->
+        <div class="step-indicator">
+          <div class="step-dot active" data-step="1"></div>
+          <div class="step-line"></div>
+          <div class="step-dot" data-step="2"></div>
+          <div class="step-line"></div>
+          <div class="step-dot" data-step="3"></div>
+        </div>
+        <div class="step-label">Step <span id="currentStep">1</span> of 3</div>
+
+        <form id="signupForm" novalidate>
+
+          <!-- Step 1: About You -->
+          <div class="form-step active" id="step1">
+            <div class="step-heading">
+              <h2>About you</h2>
+              <p>Let's start with the basics.</p>
+            </div>
+
+            <div class="form-group">
+              <label for="name">Your Name *</label>
+              <input type="text" id="name" name="name" placeholder="Sofia Laurent" required autocomplete="name" />
+              <div class="input-underline"></div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" placeholder="sofia@maison.com" required autocomplete="email" />
+              <div class="input-underline"></div>
+            </div>
+
+            <div class="form-group">
+              <label for="company">Brand / Company Name</label>
+              <input type="text" id="company" name="company" placeholder="Maison Élite" autocomplete="organization" />
+              <div class="input-underline"></div>
+            </div>
+
+            <div class="form-group">
+              <label for="website">Current Website (if any)</label>
+              <input type="url" id="website" name="website" placeholder="https://yoursite.com" />
+              <div class="input-underline"></div>
+            </div>
+
+            <button type="button" class="btn btn-primary form-next" onclick="nextStep(2)">
+              Continue
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Step 2: Your Project -->
+          <div class="form-step" id="step2">
+            <div class="step-heading">
+              <h2>Your project</h2>
+              <p>Tell us what you're dreaming of.</p>
+            </div>
+
+            <div class="form-group">
+              <label>What type of project? *</label>
+              <div class="option-grid">
+                <label class="option-card">
+                  <input type="radio" name="projectType" value="brand-web" />
+                  <div class="option-inner">
+                    <span class="option-icon">◈</span>
+                    <span class="option-title">Brand + Website</span>
+                  </div>
+                </label>
+                <label class="option-card">
+                  <input type="radio" name="projectType" value="website" />
+                  <div class="option-inner">
+                    <span class="option-icon">◉</span>
+                    <span class="option-title">Website Redesign</span>
+                  </div>
+                </label>
+                <label class="option-card">
+                  <input type="radio" name="projectType" value="ecommerce" />
+                  <div class="option-inner">
+                    <span class="option-icon">◊</span>
+                    <span class="option-title">E-Commerce</span>
+                  </div>
+                </label>
+                <label class="option-card">
+                  <input type="radio" name="projectType" value="other" />
+                  <div class="option-inner">
+                    <span class="option-icon">✦</span>
+                    <span class="option-title">Something Else</span>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Estimated Budget *</label>
+              <div class="budget-options">
+                <label class="budget-pill">
+                  <input type="radio" name="budget" value="5k-10k" />
+                  <span>$5k — $10k</span>
+                </label>
+                <label class="budget-pill">
+                  <input type="radio" name="budget" value="10k-25k" />
+                  <span>$10k — $25k</span>
+                </label>
+                <label class="budget-pill">
+                  <input type="radio" name="budget" value="25k-50k" />
+                  <span>$25k — $50k</span>
+                </label>
+                <label class="budget-pill">
+                  <input type="radio" name="budget" value="50k+" />
+                  <span>$50k+</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Desired Timeline</label>
+              <div class="select-wrap">
+                <select id="timeline" name="timeline">
+                  <option value="">Select a timeline...</option>
+                  <option value="asap">ASAP (rush project)</option>
+                  <option value="1-2m">1 — 2 months</option>
+                  <option value="2-4m">2 — 4 months</option>
+                  <option value="flexible">Flexible — quality over speed</option>
+                </select>
+                <div class="select-arrow">↓</div>
+              </div>
+            </div>
+
+            <div class="form-nav">
+              <button type="button" class="btn btn-outline" onclick="prevStep(1)">Back</button>
+              <button type="button" class="btn btn-primary" onclick="nextStep(3)">
+                Continue
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Step 3: Details -->
+          <div class="form-step" id="step3">
+            <div class="step-heading">
+              <h2>The details</h2>
+              <p>Paint us a picture of your vision.</p>
+            </div>
+
+            <div class="form-group">
+              <label for="description">Describe your project *</label>
+              <textarea id="description" name="description" rows="5" placeholder="Tell us about your brand, what you're building, who your audience is, and what makes you unique. The more detail, the better." required></textarea>
+              <div class="char-count"><span id="charCount">0</span> / 1000</div>
+            </div>
+
+            <div class="form-group">
+              <label for="inspiration">Websites you love (inspiration)</label>
+              <input type="text" id="inspiration" name="inspiration" placeholder="apple.com, drinkolipop.com, ..." />
+              <div class="input-underline"></div>
+              <div class="field-hint">URLs or names of sites that inspire you</div>
+            </div>
+
+            <div class="form-group">
+              <label for="referral">How did you hear about us?</label>
+              <div class="select-wrap">
+                <select id="referral" name="referral">
+                  <option value="">Select...</option>
+                  <option value="instagram">Instagram</option>
+                  <option value="referral">Friend / Referral</option>
+                  <option value="google">Google Search</option>
+                  <option value="behance">Behance / Dribbble</option>
+                  <option value="linkedin">LinkedIn</option>
+                  <option value="other">Other</option>
+                </select>
+                <div class="select-arrow">↓</div>
+              </div>
+            </div>
+
+            <div class="form-group checkbox-group">
+              <label class="checkbox-label">
+                <input type="checkbox" id="newsletter" name="newsletter" />
+                <span class="checkbox-custom"></span>
+                <span>Subscribe to our journal — occasional insights on luxury design</span>
+              </label>
+            </div>
+
+            <div class="form-nav">
+              <button type="button" class="btn btn-outline" onclick="prevStep(2)">Back</button>
+              <button type="submit" class="btn btn-primary btn-submit" id="submitBtn">
+                Send My Brief
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+        </form>
+
+        <!-- Success State -->
+        <div class="form-success" id="formSuccess">
+          <div class="success-icon">✦</div>
+          <h2>Message received.</h2>
+          <p>Thank you for reaching out to Valontier. We've received your brief and one of our team will be in touch within 24 hours to schedule your complimentary discovery call.</p>
+          <div class="success-ref">
+            Reference: <strong>VAL-<span id="refNumber"></span></strong>
+          </div>
+          <a href="portfolio.html" class="btn btn-outline" style="margin-top: 32px;">
+            View Our Work
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <script src="main.js"></script>
+  <script src="signup.js"></script>
+</body>
+</html>

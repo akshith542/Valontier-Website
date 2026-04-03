@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — Valontier</title>
+  <meta name="description" content="Explore Valontier's portfolio of luxury boutique websites — each crafted with intention, style, and obsessive attention to detail." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="portfolio.css" />
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <nav id="navbar">
+    <a href="index.html" class="nav-logo">V</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="signup.html">Work with Us</a></li>
+      <li><a href="signup.html" class="nav-cta">Start a Project</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- Portfolio Hero -->
+  <section class="portfolio-hero">
+    <div class="port-hero-bg"></div>
+    <div class="port-hero-content">
+      <div class="section-label reveal">Our Work</div>
+      <h1 class="port-hero-title reveal reveal-delay-1">
+        Every project,<br><em>a masterpiece.</em>
+      </h1>
+      <p class="port-hero-sub reveal reveal-delay-2">
+        A curated selection of digital experiences we've crafted<br>
+        for ambitious brands around the world.
+      </p>
+    </div>
+    <div class="port-hero-scroll-hint reveal reveal-delay-3">
+      <span>48 projects completed</span>
+      <span class="divider">·</span>
+      <span>Currently booking Q3 2026</span>
+    </div>
+  </section>
+
+  <!-- Filter Bar -->
+  <section class="filter-section">
+    <div class="filter-container">
+      <div class="filter-tabs reveal">
+        <button class="filter-tab active" data-filter="all">All Work</button>
+        <button class="filter-tab" data-filter="branding">Branding</button>
+        <button class="filter-tab" data-filter="ecommerce">E-Commerce</button>
+        <button class="filter-tab" data-filter="editorial">Editorial</button>
+        <button class="filter-tab" data-filter="saas">SaaS</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Grid -->
+  <section class="portfolio-grid-section">
+    <div class="portfolio-grid">
+
+      <!-- Project 1 - Large -->
+      <article class="project-card card-large reveal" data-category="branding">
+        <div class="project-visual" style="background: linear-gradient(135deg, #1A1614 0%, #3D2B1F 50%, #C8A96E 100%);">
+          <div class="project-mockup">
+            <div class="mock-browser">
+              <div class="mock-bar">
+                <span class="mock-dot"></span>
+                <span class="mock-dot"></span>
+                <span class="mock-dot"></span>
+              </div>
+              <div class="mock-screen" style="background: linear-gradient(180deg, #F7F3EC 0%, #E8D5A3 100%);">
+                <div class="mock-nav"></div>
+                <div class="mock-hero-text"></div>
+                <div class="mock-hero-text short"></div>
+              </div>
+            </div>
+          </div>
+          <div class="project-hover-overlay">
+            <a href="signup.html" class="btn btn-gold">View Project</a>
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="project-meta">
+            <span class="project-category">Brand Identity</span>
+            <span class="project-year">2025</span>
+          </div>
+          <h2 class="project-title">Maison Élite</h2>
+          <p class="project-desc">Complete brand identity and digital presence for a Parisian luxury interior design atelier.</p>
+          <div class="project-tags">
+            <span class="tag">Branding</span>
+            <span class="tag">Web Design</span>
+            <span class="tag">Motion</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="project-card reveal reveal-delay-1" data-category="ecommerce">
+        <div class="project-visual" style="background: linear-gradient(135deg, #D4CCE8 0%, #E8D5F0 100%);">
+          <div class="project-mockup">
+            <div class="mock-browser">
+              <div class="mock-bar">
+                <span class="mock-dot"></span>
+                <span class="mock-dot"></span>
+                <span class="mock-dot"></span>
+              </div>
+              <div class="mock-screen" style="background: linear-gradient(180deg, #181614 0%, #2A1F2E 100%);">
+                <div class="mock-nav" style="background: rgba(200,169,110,0.3);"></div>
+                <div class="mock-product-grid">
+                  <div class="mock-product"></div>
+                  <div class="mock-product"></div>
+                  <div class="mock-product"></div>
+                  <div class="mock-product"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-hover-overlay">
+            <a href="signup.html" class="btn btn-gold">View Project</a>
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="project-meta">
+            <span class="project-category">E-Commerce</span>
+            <span class="project-year">2025</span>
+          </div>
+          <h2 class="project-title">Lumière Co.</h2>
+          <p class="project-desc">Luxury skincare e-commerce with bespoke 3D product visualization.</p>
+          <div class="project-tags">
+            <span class="tag">E-Commerce</span>
+            <span class="tag">3D</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 3 -->
+      <article class="project-card reveal reveal-delay-2" data-category="editorial">
+        <div class="project-visual" style="background: linear-gradient(135deg, #B8C9B0 0%, #8FA882 100%);">
+          <div class="project-mockup">
+            <div class="mock-browser">
+              <div class="mock-bar">
+                <span class="mock-dot"></span>
+                <span class="mock-dot"></span>
+                <span class="mock-dot"></span>
+              </div>
+              <div class="mock-screen" style="background: #FDFAF5;">
+                <div class="mock-nav" style="background: rgba(24,22,20,0.1);"></div>
+                <div class="mock-editorial">
+                  <div class="mock-text-line"></div>
+                  <div class="mock-text-line short"></div>
+                  <div class="mock-text-block"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-hover-overlay">
+            <a href="signup.html" class="btn btn-gold">View Project</a>
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="project-meta">
+            <span class="project-category">Editorial</span>
+            <span class="project-year">2025</span>
+          </div>
+          <h2 class="project-title">Verde Magazine</h2>
+          <p class="project-desc">Digital editorial platform for a sustainable luxury lifestyle publication.</p>
+          <div class="project-tags">
+            <span class="tag">Editorial</span>
+            <span class="tag">CMS</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 4 - Large -->
+      <article class="project-card card-large reveal" data-category="saas">
+        <div class="project-visual" style="background: linear-gradient(135deg, #0F0D0B 0%, #1A2540 100%);">
+          <div class="project-mockup">
+            <div class="mock-browser">
+              <div class="mock-bar">
+                <span class="mock-dot"></span>
+                <span class="mock-dot"></span>
+                <span class="mock-dot"></span>
+              </div>
+              <div class="mock-screen" style="background: linear-gradient(180deg, #0A0F1E 0%, #141B2D 100%);">
+                <div class="mock-nav" style="background: rgba(100,120,200,0.3);"></div>
+                <div class="mock-dashboard">
+                  <div class="mock-chart"></div>
+                  <div class="mock-stat-row">
+                    <div class="mock-stat"></div>
+                    <div class="mock-stat"></div>
+                    <div class="mock-stat"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-hover-overlay">
+            <a href="signup.html" class="btn btn-gold">View Project</a>
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="project-meta">
+            <span class="project-category">SaaS Platform</span>
+            <span class="project-year">2024</span>
+          </div>
+          <h2 class="project-title">Aurum Analytics</h2>
+          <p class="project-desc">A powerful analytics SaaS platform designed with the elegance of luxury tools and precision of financial software.</p>
+          <div class="project-tags">
+            <span class="tag">SaaS</span>
+            <span class="tag">Dashboard</span>
+            <span class="tag">Data Viz</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 5 -->
+      <article class="project-card reveal" data-category="branding">
+        <div class="project-visual" style="background: linear-gradient(135deg, #F2D9D0 0%, #E8896A 100%);">
+          <div class="project-mockup">
+            <div class="mock-browser">
+              <div class="mock-bar">
+                <span class="mock-dot"></span>
+                <span class="mock-dot"></span>
+                <span class="mock-dot"></span>
+              </div>
+              <div class="mock-screen" style="background: #FFF8F5;">
+                <div class="mock-nav" style="background: rgba(232,137,106,0.2);"></div>
+                <div class="mock-hero-text" style="background: rgba(232,137,106,0.4);"></div>
+                <div class="mock-hero-text short" style="background: rgba(232,137,106,0.2);"></div>
+              </div>
+            </div>
+          </div>
+          <div class="project-hover-overlay">
+            <a href="signup.html" class="btn btn-gold">View Project</a>
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="project-meta">
+            <span class="project-category">Brand & Web</span>
+            <span class="project-year">2024</span>
+          </div>
+          <h2 class="project-title">Fontaine Studio</h2>
+          <p class="project-desc">Boutique photography studio — identity system and immersive portfolio website.</p>
+          <div class="project-tags">
+            <span class="tag">Branding</span>
+            <span class="tag">Portfolio</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 6 -->
+      <article class="project-card reveal reveal-delay-1" data-category="ecommerce">
+        <div class="project-visual" style="background: linear-gradient(135deg, #E8D5A3 0%, #C8A96E 100%);">
+          <div class="project-mockup">
+            <div class="mock-browser">
+              <div class="mock-bar">
+                <span class="mock-dot"></span>
+                <span class="mock-dot"></span>
+                <span class="mock-dot"></span>
+              </div>
+              <div class="mock-screen" style="background: #1A1614;">
+                <div class="mock-nav" style="background: rgba(200,169,110,0.3);"></div>
+                <div class="mock-product-grid">
+                  <div class="mock-product" style="background: rgba(200,169,110,0.4);"></div>
+                  <div class="mock-product" style="background: rgba(200,169,110,0.2);"></div>
+                  <div class="mock-product" style="background: rgba(200,169,110,0.4);"></div>
+                  <div class="mock-product" style="background: rgba(200,169,110,0.2);"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-hover-overlay">
+            <a href="signup.html" class="btn btn-gold">View Project</a>
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="project-meta">
+            <span class="project-category">E-Commerce</span>
+            <span class="project-year">2024</span>
+          </div>
+          <h2 class="project-title">Or & Soie</h2>
+          <p class="project-desc">French luxury jewelry brand with an immersive online boutique experience.</p>
+          <div class="project-tags">
+            <span class="tag">E-Commerce</span>
+            <span class="tag">Animation</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Stats Bar -->
+  <section class="portfolio-stats reveal">
+    <div class="stats-container">
+      <div class="p-stat">
+        <div class="p-stat-num">48+</div>
+        <div class="p-stat-label">Projects Delivered</div>
+      </div>
+      <div class="p-stat-divider"></div>
+      <div class="p-stat">
+        <div class="p-stat-num">12</div>
+        <div class="p-stat-label">Countries</div>
+      </div>
+      <div class="p-stat-divider"></div>
+      <div class="p-stat">
+        <div class="p-stat-num">4.9★</div>
+        <div class="p-stat-label">Average Rating</div>
+      </div>
+      <div class="p-stat-divider"></div>
+      <div class="p-stat">
+        <div class="p-stat-num">3×</div>
+        <div class="p-stat-label">Avg. Revenue Increase</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="cta-blob-1"></div>
+    <div class="cta-blob-2"></div>
+    <div class="cta-container reveal">
+      <div class="section-label">Your turn</div>
+      <h2 class="cta-headline">Ready to be<br><em>next?</em></h2>
+      <p class="cta-sub">Every project in our portfolio started with one conversation. Yours can too.</p>
+      <div class="cta-buttons">
+        <a href="signup.html" class="btn btn-primary">
+          Start Your Project
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <a href="index.html" class="btn btn-outline">Back to Home</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="logo">V</span>
+        <p>Boutique luxury web design for brands that refuse to be ordinary.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="signup.html">Work with Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:hello@valontier.com">hello@valontier.com</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Valontier. All rights reserved.</span>
+      <span>Crafted with obsession ✦</span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script src="portfolio.js"></script>
+</body>
+</html>
