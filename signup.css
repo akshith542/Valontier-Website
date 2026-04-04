@@ -37,6 +37,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   min-height: 100vh;
+  background: linear-gradient(to right, var(--charcoal) 50%, var(--ivory) 50%);
 }
 
 /* LEFT PANEL */
