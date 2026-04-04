@@ -87,24 +87,31 @@
 
 /* Meta line */
 .hero-meta {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 12px;
-  font-size: 0.68rem;
-  letter-spacing: 0.22em;
+  gap: 10px;
+  font-size: 0.65rem;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   color: rgba(24,22,20,0.45);
   margin-bottom: 40px;
+  background: rgba(24,22,20,0.04);
+  border: 1px solid rgba(24,22,20,0.08);
+  border-radius: 100px;
+  padding: 9px 18px 9px 14px;
 }
 
 .hero-meta-line {
-  width: 32px;
+  width: 20px;
   height: 1px;
   background: var(--gold);
   flex-shrink: 0;
 }
 
-.hero-meta-dot { color: var(--gold); }
+.hero-meta-dot {
+  color: rgba(24,22,20,0.2);
+  font-size: 0.5rem;
+}
 
 /* Main headline */
 .hero-h1 {
