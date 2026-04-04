@@ -19,9 +19,16 @@ document.addEventListener('DOMContentLoaded', () => {
   // ========================
   const progress = document.getElementById('scrollProgress');
   if (progress) {
+    let rafPending = false;
     window.addEventListener('scroll', () => {
-      const total = document.documentElement.scrollHeight - window.innerHeight;
-      progress.style.width = (total > 0 ? (window.scrollY / total) * 100 : 0) + '%';
+      if (rafPending) return;
+      rafPending = true;
+      requestAnimationFrame(() => {
+        const total = document.documentElement.scrollHeight - window.innerHeight;
+        const ratio = total > 0 ? window.scrollY / total : 0;
+        progress.style.transform = `scaleX(${ratio})`;
+        rafPending = false;
+      });
     }, { passive: true });
   }
 
