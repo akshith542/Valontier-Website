@@ -150,8 +150,17 @@ document.addEventListener('DOMContentLoaded', () => {
       submitBtn.classList.add('loading');
       submitBtn.textContent = 'Sending...';
 
-      // Simulate async submission
-      setTimeout(() => {
+      // Collect form data
+      const data = new FormData(form);
+
+      fetch('https://formspree.io/f/meeprvpy', {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      })
+      .then(res => {
+        if (!res.ok) throw new Error('Network response was not ok');
+
         form.style.opacity = '0';
         form.style.transform = 'translateY(-10px)';
         form.style.transition = 'opacity 0.4s, transform 0.4s';
@@ -161,13 +170,17 @@ document.addEventListener('DOMContentLoaded', () => {
           document.querySelector('.step-indicator').style.display = 'none';
           document.querySelector('.step-label').style.display = 'none';
 
-          // Generate reference number
           const ref = Math.random().toString(36).substring(2, 8).toUpperCase();
           document.getElementById('refNumber').textContent = ref;
 
           success.classList.add('visible');
         }, 400);
-      }, 1800);
+      })
+      .catch(() => {
+        submitBtn.classList.remove('loading');
+        submitBtn.textContent = 'Send My Brief';
+        alert('Something went wrong. Please try again or email us directly at hello@valontier.com');
+      });
     });
   }
 
