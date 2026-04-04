@@ -179,7 +179,7 @@ document.addEventListener('DOMContentLoaded', () => {
       .catch(() => {
         submitBtn.classList.remove('loading');
         submitBtn.textContent = 'Send My Brief';
-        alert('Something went wrong. Please try again or email us directly at hello@volontier.com');
+        alert('Something went wrong. Please try again or email us directly at contact@volontier.com');
       });
     });
   }
