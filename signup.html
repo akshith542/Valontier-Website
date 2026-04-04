@@ -3,8 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Start a Project — Valontier</title>
-  <meta name="description" content="Ready to build something extraordinary? Tell us about your project and let's create something unforgettable together." />
+  <title>Start a Project — Valontier Luxury Web Design</title>
+  <meta name="description" content="Ready to build something extraordinary? Apply to work with Valontier — a boutique luxury web design studio hand-selecting founding clients. Response within 24 hours." />
+  <meta name="keywords" content="hire luxury web designer, boutique web design agency contact, custom website quote, luxury web design project" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://valontier.com/signup.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://valontier.com/signup.html" />
+  <meta property="og:title" content="Start a Project — Valontier Luxury Web Design" />
+  <meta property="og:description" content="Apply to work with Valontier. Boutique luxury web design — 100% custom, boutique attention, built to convert." />
+  <meta property="og:image" content="https://valontier.com/valontierLogo.png" />
+  <meta property="og:site_name" content="Valontier" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Start a Project — Valontier Luxury Web Design" />
+  <meta name="twitter:description" content="Apply to work with Valontier. Boutique luxury web design — 100% custom, built to convert." />
+  <meta name="twitter:image" content="https://valontier.com/valontierLogo.png" />
+
   <link rel="icon" type="image/png" href="valontierLogo.png" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="signup.css" />
@@ -29,6 +47,12 @@
       <span></span><span></span><span></span>
     </div>
   </nav>
+  <div class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="signup.html">Work with Us</a>
+    <a href="signup.html" class="btn btn-primary mobile-cta">Start a Project</a>
+  </div>
 
   <!-- Signup Split Layout -->
   <div class="signup-layout">
@@ -96,6 +120,8 @@
         <div class="step-label">Step <span id="currentStep">1</span> of 3</div>
 
         <form id="signupForm" novalidate>
+          <!-- Honeypot — invisible to humans, bots fill it and get blocked -->
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
 
           <!-- Step 1: About You -->
           <div class="form-step active" id="step1">

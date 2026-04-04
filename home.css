@@ -748,24 +748,26 @@
 /* ─── RESPONSIVE ─────────────────────────── */
 
 @media (max-width: 1100px) {
-  .hero { grid-template-columns: 1fr 340px; padding: 120px 48px 80px; }
+  .hero-grid { padding: 100px 48px 48px; gap: 40px; }
+  .services-section, .why-section, .process-section, .cta-section { padding: 100px 48px; }
 }
 
 @media (max-width: 900px) {
-  .hero {
+  .hero-grid {
     grid-template-columns: 1fr;
-    padding: 110px 40px 80px;
+    padding: 100px 40px 60px;
     text-align: center;
   }
-  .hero-left { align-items: center; }
+  .hero-copy { align-items: center; }
   .hero-desc { max-width: 100%; }
-  .hero-right { display: none; }
-  .hero-scroll-hint { left: 40px; }
+  .hero-ctas { justify-content: center; }
+  .hero-meta { justify-content: center; }
+  .hero-squiggle { margin: 2px auto 32px; }
+  .hero-card-zone { display: none; }
 }
 
 @media (max-width: 768px) {
-  .hero { padding: 100px 24px 80px; }
-  .hero-scroll-hint { left: 24px; }
+  .hero-grid { padding: 88px 24px 56px; }
 
   .manifesto-section { padding: 60px 24px; }
   .manifesto-deco-left, .manifesto-deco-right { display: none; }
@@ -782,4 +784,6 @@
 
 @media (max-width: 500px) {
   .why-cards { grid-template-columns: 1fr; }
+  .hero-ctas { flex-direction: column; align-items: center; width: 100%; }
+  .hero-ctas .btn { width: 100%; justify-content: center; }
 }

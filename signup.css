@@ -6,6 +6,15 @@ body {
   overflow-y: auto;
 }
 
+/* Mobile menu — dark to match navbar */
+.mobile-menu {
+  background: var(--charcoal);
+  border-bottom-color: rgba(200,169,110,0.12);
+}
+.mobile-menu a:not(.btn) { color: var(--cream); border-bottom-color: rgba(247,243,236,0.08); }
+.mobile-menu a:not(.btn):hover { color: var(--gold); }
+#navbar .hamburger span { background: var(--cream); }
+
 /* Nav — always dark on this split-panel page so it's readable across both halves */
 #navbar {
   background: rgba(24, 22, 20, 0.96);
