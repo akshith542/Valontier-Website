@@ -102,10 +102,7 @@
 }
 
 .hero-meta-line {
-  width: 20px;
-  height: 1px;
-  background: var(--gold);
-  flex-shrink: 0;
+  display: none;
 }
 
 .hero-meta-dot {
