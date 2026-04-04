@@ -1,5 +1,5 @@
 /* ========================
-   VALONTIER — MAIN JS
+   VOLONTIER — MAIN JS
    ======================== */
 
 document.addEventListener('DOMContentLoaded', () => {
