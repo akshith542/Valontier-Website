@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect width="32" height="32" rx="6" fill="#F7F3EC"/>
+  <!-- Wide serif cap top-left -->
+  <rect x="3" y="6" width="9" height="2" rx="0.5" fill="#181614"/>
+  <!-- Wide serif cap top-right -->
+  <rect x="20" y="6" width="9" height="2" rx="0.5" fill="#181614"/>
+  <!-- Left arm of V -->
+  <polygon points="3,8 8,8 16,24 12,24" fill="#181614"/>
+  <!-- Right arm of V -->
+  <polygon points="24,8 29,8 20,24 16,24" fill="#181614"/>
+</svg>
