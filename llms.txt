@@ -1,0 +1,47 @@
+# Volontier
+
+> Boutique luxury web design studio crafting bespoke digital experiences for brands that refuse to be ordinary.
+
+Volontier is a boutique web design studio founded in 2026. We specialise in fully custom, hand-coded websites for luxury brands, lifestyle companies, e-commerce stores, SaaS products, and anyone who demands more than a template. Every project starts from a blank canvas — no page builders, no shortcuts, no recycled designs.
+
+## What We Do
+
+- **Web Design** — Pixel-perfect, conversion-focused custom websites built to impress and perform
+- **Brand & Identity** — Logo design, typography systems, colour palettes, and visual language
+- **Development** — Clean, hand-coded HTML/CSS/JS builds optimised for speed and SEO
+- **Digital Strategy** — User journey mapping, conversion architecture, and growth-oriented thinking
+- **E-Commerce** — Custom storefronts designed to sell and scale
+
+## Our Design Directions
+
+We work fluently across multiple design languages:
+
+- **Noir** — Dark luxury; deep blacks, champagne gold, razor-sharp typography for fashion houses and premium hospitality
+- **Vivid** — Playful pop; bold colours, organic shapes, maximum personality for lifestyle brands and consumer apps
+- **Blanc** — Clean minimal; breathing room and perfect type for architecture studios and wellness brands
+- **Editorial** — Oversized type, unexpected layout — for agencies, magazines, and brands that want to be genuinely surprising
+- **Terra** — Organic luxury; natural textures and earthy tones for sustainable brands and conscious luxury
+- **Apex** — Tech precision; dark mode, data-forward, engineered elegance for SaaS and fintech
+
+## Why Volontier
+
+- 100% bespoke — we've never used a template and never will
+- Boutique client roster — small by design so every client gets our full attention
+- Playful luxury — beautiful doesn't mean boring; we blend personality with precision
+- Built to convert — gorgeous sites that also grow your business from day one
+
+## Contact & Services
+
+- **Website:** https://volontier.com
+- **Email:** contact@volontier.com
+- **Start a project:** https://volontier.com/signup.html
+- **Portfolio:** https://volontier.com/portfolio.html
+- **Founded:** 2026
+- **Service area:** Worldwide
+- **Languages:** English
+
+## Pages
+
+- [Home](https://volontier.com/) — Studio overview, services, process, and founding client offer
+- [Portfolio](https://volontier.com/portfolio.html) — Six distinct design directions and our aesthetic range
+- [Work with Us](https://volontier.com/signup.html) — Project enquiry form and contact details

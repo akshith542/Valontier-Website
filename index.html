@@ -7,10 +7,12 @@
   <meta name="description" content="Volontier is a boutique luxury web design studio crafting bespoke websites for brands that refuse to be ordinary. Custom design, brand identity & development — built from scratch, every time." />
   <meta name="keywords" content="luxury web design, boutique web design studio, custom website design, bespoke web development, luxury brand website, high-end web design agency" />
   <meta name="robots" content="index, follow" />
+  <meta name="author" content="Volontier" />
   <link rel="canonical" href="https://volontier.com/" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_US" />
   <meta property="og:url" content="https://volontier.com/" />
   <meta property="og:title" content="Volontier — Luxury Boutique Web Design Studio" />
   <meta property="og:description" content="Boutique web design for brands that refuse to be ordinary. Custom websites built from scratch — every pixel obsessed over, every interaction intentional." />
@@ -19,6 +21,7 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@volontier" />
   <meta name="twitter:title" content="Volontier — Luxury Boutique Web Design Studio" />
   <meta name="twitter:description" content="Boutique web design for brands that refuse to be ordinary. Custom websites built from scratch." />
   <meta name="twitter:image" content="https://volontier.com/VolontierLogo.png" />
@@ -27,17 +30,64 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "Volontier",
-    "description": "Boutique luxury web design studio crafting bespoke digital experiences for brands that refuse to be ordinary.",
-    "url": "https://volontier.com",
-    "logo": "https://volontier.com/VolontierLogo.png",
-    "email": "contact@volontier.com",
-    "foundingDate": "2026",
-    "serviceType": ["Web Design", "Brand Identity", "Web Development", "Digital Strategy", "E-Commerce"],
-    "areaServed": "Worldwide",
-    "priceRange": "$$$",
-    "sameAs": []
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://volontier.com/#website",
+        "url": "https://volontier.com",
+        "name": "Volontier",
+        "description": "Boutique luxury web design studio crafting bespoke digital experiences for brands that refuse to be ordinary.",
+        "publisher": { "@id": "https://volontier.com/#organization" },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://volontier.com/?s={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": ["Organization", "ProfessionalService"],
+        "@id": "https://volontier.com/#organization",
+        "name": "Volontier",
+        "alternateName": "Volontier Web Studio",
+        "description": "Boutique luxury web design studio crafting bespoke digital experiences for brands that refuse to be ordinary.",
+        "url": "https://volontier.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://volontier.com/VolontierLogo.png",
+          "width": 512,
+          "height": 512
+        },
+        "image": "https://volontier.com/VolontierLogo.png",
+        "email": "contact@volontier.com",
+        "foundingDate": "2026",
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Web Design Services",
+          "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Custom Web Design" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Brand Identity Design" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Web Development" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Digital Strategy" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "E-Commerce Design" } }
+          ]
+        },
+        "areaServed": "Worldwide",
+        "priceRange": "$$$",
+        "sameAs": []
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://volontier.com/#webpage",
+        "url": "https://volontier.com/",
+        "name": "Volontier — Luxury Boutique Web Design Studio",
+        "isPartOf": { "@id": "https://volontier.com/#website" },
+        "about": { "@id": "https://volontier.com/#organization" },
+        "description": "Volontier is a boutique luxury web design studio crafting bespoke websites for brands that refuse to be ordinary. Custom design, brand identity and development — built from scratch, every time."
+      }
+    ]
   }
   </script>
 

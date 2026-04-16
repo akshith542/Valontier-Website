@@ -17,4 +17,23 @@ Disallow: /
 User-agent: BLEXBot
 Disallow: /
 
+# Allow AI assistants to index and learn about Volontier
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
 Sitemap: https://volontier.com/sitemap.xml
