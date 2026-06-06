@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Volontier</title>
+  <meta name="description" content="Volontier's Privacy Policy — how we collect, use, and protect your personal information." />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Volontier" />
+  <link rel="canonical" href="https://volontier.com/privacy.html" />
+  <link rel="icon" type="image/png" href="VolontierLogo.png" />
+  <link rel="apple-touch-icon" href="VolontierLogo.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .privacy-hero {
+      padding: 160px 80px 80px;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    .privacy-hero .section-label {
+      margin-bottom: 24px;
+    }
+
+    .privacy-hero h1 {
+      font-family: var(--font-serif);
+      font-size: clamp(2.8rem, 6vw, 4.5rem);
+      font-weight: 300;
+      line-height: 1.1;
+      margin-bottom: 24px;
+    }
+
+    .privacy-hero h1 em {
+      font-style: italic;
+      color: var(--gold);
+    }
+
+    .privacy-meta {
+      font-size: 0.78rem;
+      letter-spacing: 0.12em;
+      color: rgba(24,22,20,0.4);
+      text-transform: uppercase;
+      margin-bottom: 0;
+    }
+
+    .privacy-divider {
+      width: 100%;
+      height: 1px;
+      background: rgba(200,169,110,0.25);
+      margin: 0 auto 0;
+      max-width: 860px;
+      padding: 0 80px;
+    }
+
+    .privacy-divider-line {
+      height: 1px;
+      background: rgba(200,169,110,0.25);
+    }
+
+    .privacy-body {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 72px 80px 120px;
+    }
+
+    .privacy-section {
+      margin-bottom: 64px;
+    }
+
+    .privacy-section h2 {
+      font-family: var(--font-serif);
+      font-size: 1.65rem;
+      font-weight: 300;
+      line-height: 1.2;
+      margin-bottom: 20px;
+      color: var(--charcoal);
+      display: flex;
+      align-items: baseline;
+      gap: 16px;
+    }
+
+    .privacy-section h2 .ps-num {
+      font-family: var(--font-sans);
+      font-size: 0.68rem;
+      letter-spacing: 0.22em;
+      color: var(--gold);
+      font-weight: 400;
+      text-transform: uppercase;
+      flex-shrink: 0;
+    }
+
+    .privacy-section p {
+      font-size: 0.95rem;
+      line-height: 1.85;
+      color: rgba(24,22,20,0.72);
+      margin-bottom: 16px;
+    }
+
+    .privacy-section p:last-child {
+      margin-bottom: 0;
+    }
+
+    .privacy-section ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+
+    .privacy-section ul li {
+      font-size: 0.95rem;
+      line-height: 1.75;
+      color: rgba(24,22,20,0.72);
+      padding-left: 20px;
+      position: relative;
+    }
+
+    .privacy-section ul li::before {
+      content: '✦';
+      position: absolute;
+      left: 0;
+      color: var(--gold);
+      font-size: 0.55rem;
+      top: 6px;
+    }
+
+    .privacy-section a {
+      color: var(--charcoal);
+      text-decoration: underline;
+      text-decoration-color: rgba(200,169,110,0.5);
+      text-underline-offset: 3px;
+      transition: color 0.2s, text-decoration-color 0.2s;
+    }
+
+    .privacy-section a:hover {
+      color: var(--gold);
+      text-decoration-color: var(--gold);
+    }
+
+    .privacy-contact-box {
+      background: var(--charcoal);
+      color: var(--cream);
+      border-radius: 16px;
+      padding: 48px;
+      margin-top: 72px;
+      display: flex;
+      align-items: flex-start;
+      gap: 40px;
+    }
+
+    .privacy-contact-box .pcb-icon {
+      font-size: 2rem;
+      flex-shrink: 0;
+    }
+
+    .privacy-contact-box h3 {
+      font-family: var(--font-serif);
+      font-size: 1.4rem;
+      font-weight: 300;
+      margin-bottom: 10px;
+      color: var(--cream);
+    }
+
+    .privacy-contact-box p {
+      font-size: 0.88rem;
+      line-height: 1.75;
+      color: rgba(247,243,236,0.55);
+      margin-bottom: 20px;
+    }
+
+    .privacy-contact-box a {
+      color: var(--gold);
+      text-decoration: none;
+      font-size: 0.88rem;
+      letter-spacing: 0.06em;
+      transition: opacity 0.2s;
+    }
+
+    .privacy-contact-box a:hover {
+      opacity: 0.75;
+    }
+
+    @media (max-width: 768px) {
+      .privacy-hero {
+        padding: 120px 24px 60px;
+      }
+
+      .privacy-body {
+        padding: 52px 24px 80px;
+      }
+
+      .privacy-contact-box {
+        flex-direction: column;
+        gap: 20px;
+        padding: 32px 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <nav id="navbar">
+    <ul class="nav-left">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="signup.html">Work with Us</a></li>
+    </ul>
+    <a href="index.html" class="nav-wordmark">
+      <span class="nav-wordmark-text">Volontier</span>
+    </a>
+    <div class="nav-right">
+      <a href="signup.html" class="nav-cta">Start a Project</a>
+    </div>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="signup.html">Work with Us</a>
+    <a href="signup.html" class="btn btn-primary mobile-cta">Start a Project</a>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       HERO
+  ══════════════════════════════════════ -->
+  <div class="privacy-hero">
+    <div class="section-label">Legal</div>
+    <h1>Privacy<br><em>Policy.</em></h1>
+    <p class="privacy-meta">Last updated: June 2026</p>
+  </div>
+
+  <div style="max-width:860px;margin:0 auto;padding:0 80px;">
+    <div style="height:1px;background:rgba(200,169,110,0.25);"></div>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       BODY
+  ══════════════════════════════════════ -->
+  <div class="privacy-body">
+
+    <div class="privacy-section">
+      <p>
+        At Volontier, we take your privacy seriously — the same obsessive care we bring to every pixel, we bring to protecting your personal information. This policy explains what we collect, why we collect it, and how we handle it.
+      </p>
+    </div>
+
+    <div class="privacy-section">
+      <h2><span class="ps-num">01</span> Information We Collect</h2>
+      <p>We only collect information you voluntarily provide to us. When you fill out our project enquiry form, we may collect:</p>
+      <ul>
+        <li>Your name and email address</li>
+        <li>Your website URL and business type</li>
+        <li>A brief description of your project and budget range</li>
+        <li>Any additional information you choose to share in the message field</li>
+      </ul>
+      <p>We do not collect payment information directly — any billing is handled through secure third-party processors.</p>
+    </div>
+
+    <div class="privacy-section">
+      <h2><span class="ps-num">02</span> How We Use Your Information</h2>
+      <p>The information you provide is used solely to respond to your enquiry and, if we move forward together, to deliver your project. Specifically:</p>
+      <ul>
+        <li>To respond to your project application within 24 hours</li>
+        <li>To understand your needs and tailor our proposal</li>
+        <li>To communicate throughout the project lifecycle</li>
+        <li>To send occasional updates about Volontier if you have opted in</li>
+      </ul>
+      <p>We will never sell, rent, or trade your personal information to any third party.</p>
+    </div>
+
+    <div class="privacy-section">
+      <h2><span class="ps-num">03</span> Cookies & Analytics</h2>
+      <p>
+        Our website may use minimal, privacy-respecting analytics to understand general visitor behaviour (e.g., which pages are most visited). This data is aggregated and anonymous — it is never tied to an individual.
+      </p>
+      <p>
+        We do not use invasive tracking technologies or third-party advertising cookies. If you wish to disable cookies entirely, you can do so through your browser settings without affecting your ability to browse the site.
+      </p>
+    </div>
+
+    <div class="privacy-section">
+      <h2><span class="ps-num">04</span> Third-Party Services</h2>
+      <p>To operate our website and process enquiries, we may use the following types of third-party services:</p>
+      <ul>
+        <li><strong>Form processing</strong> — to securely receive and store your enquiry</li>
+        <li><strong>Email delivery</strong> — to send and receive correspondence</li>
+        <li><strong>Hosting & CDN</strong> — to serve the website reliably and securely</li>
+      </ul>
+      <p>
+        Each third party is selected for their commitment to data protection. We share only the minimum information required for the service to function.
+      </p>
+    </div>
+
+    <div class="privacy-section">
+      <h2><span class="ps-num">05</span> Data Retention</h2>
+      <p>
+        We retain your enquiry data only for as long as it is necessary — typically for the duration of our client relationship plus a reasonable period thereafter for legal and accounting purposes. Project files are retained as long as agreed upon in your project contract.
+      </p>
+      <p>
+        If we do not take on your project, your enquiry information is deleted within 90 days of our last communication.
+      </p>
+    </div>
+
+    <div class="privacy-section">
+      <h2><span class="ps-num">06</span> Your Rights</h2>
+      <p>You have the right to:</p>
+      <ul>
+        <li>Request a copy of the personal data we hold about you</li>
+        <li>Ask us to correct any inaccurate information</li>
+        <li>Request that we delete your data (subject to any legal obligations)</li>
+        <li>Withdraw consent for marketing communications at any time</li>
+      </ul>
+      <p>
+        To exercise any of these rights, simply email us at <a href="mailto:contact@volontier.com">contact@volontier.com</a>. We will respond within 30 days.
+      </p>
+    </div>
+
+    <div class="privacy-section">
+      <h2><span class="ps-num">07</span> Security</h2>
+      <p>
+        We take reasonable technical and organisational measures to protect your information from unauthorised access, loss, or misuse. Our site is served over HTTPS and we use reputable, security-conscious service providers.
+      </p>
+      <p>
+        No method of transmission over the internet is 100% secure, but we do everything in our power to protect what you share with us.
+      </p>
+    </div>
+
+    <div class="privacy-section">
+      <h2><span class="ps-num">08</span> Changes to This Policy</h2>
+      <p>
+        We may update this Privacy Policy from time to time to reflect changes in our practices or for legal reasons. Any material changes will be noted with a revised "Last updated" date at the top of this page. We encourage you to review this page periodically.
+      </p>
+    </div>
+
+    <!-- Contact Box -->
+    <div class="privacy-contact-box">
+      <div class="pcb-icon">✦</div>
+      <div>
+        <h3>Questions about your privacy?</h3>
+        <p>We're a small, human team. If you have any questions about how we handle your data, reach out directly — you'll get a real reply.</p>
+        <a href="mailto:contact@volontier.com">contact@volontier.com</a>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="logo">V</span>
+        <p>Boutique luxury web design for brands that refuse to be ordinary.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="signup.html">Work with Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:contact@volontier.com">contact@volontier.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Volontier. All rights reserved. <a href="privacy.html" style="color:inherit;text-decoration:underline;text-underline-offset:3px;margin-left:16px;">Privacy Policy</a></span>
+      <span>Made with obsession ✦</span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
