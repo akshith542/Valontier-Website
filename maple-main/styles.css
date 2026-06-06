@@ -353,6 +353,8 @@ nav.scrolled { padding: 12px 32px; border-color: rgba(92,64,51,0.1); box-shadow:
 .info-row p { color: var(--dark); font-size: 1rem; }
 .info-row .muted { color: var(--muted); font-size: 0.92rem; }
 .visit-btns { display: flex; gap: 12px; margin-top: 28px; flex-wrap: wrap; }
+.demo-note { margin-top: 24px; font-size: 0.86rem; color: var(--muted); background: rgba(143,175,143,0.16); border: 1px dashed rgba(92,64,51,0.25); border-radius: 12px; padding: 13px 16px; line-height: 1.5; }
+.demo-note strong { color: var(--warm-brown); }
 .map-box {
   position: relative; border-radius: 24px; overflow: hidden; min-height: 420px;
   background:
