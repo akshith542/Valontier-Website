@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu | Maple &amp; Main Café — Coffee, Tea, Pastries &amp; Breakfast</title>
+  <meta name="description" content="Browse the Maple & Main Café menu — handcrafted coffee, tea, fresh pastries, breakfast, and seasonal favorites in Richmond, VA." />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Volontier" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="leaf.svg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <nav id="nav">
+    <a href="index.html" class="brand"><span class="leaf" aria-hidden="true"></span> Maple &amp; Main</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="menu.html" class="active">Menu</a></li>
+      <li><a href="catering.html">Catering</a></li>
+      <li><a href="visit.html">Visit Us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-right"><a href="menu.html" class="btn btn-primary">Order Online</a></div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </nav>
+  <div class="menu-overlay" id="overlay"></div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="menu.html" class="active">Menu</a>
+    <a href="catering.html">Catering</a>
+    <a href="visit.html">Visit Us</a>
+    <a href="contact.html">Contact</a>
+    <a href="menu.html" class="btn btn-primary">Order Online</a>
+  </div>
+
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="crumbs"><a href="index.html">Home</a><span>/</span>Menu</p>
+      <h1>Our <span class="accent">Menu</span></h1>
+      <p>From handcrafted lattes to fresh pastries, our menu is made for slow mornings, quick stops, and everything in between.</p>
+    </div>
+  </section>
+
+  <section style="padding-top:64px;">
+    <div class="wrap">
+      <div class="menu-tabs reveal">
+        <button class="tab active" data-tab="coffee">Coffee</button>
+        <button class="tab" data-tab="tea">Tea</button>
+        <button class="tab" data-tab="pastries">Pastries</button>
+        <button class="tab" data-tab="breakfast">Breakfast</button>
+        <button class="tab" data-tab="seasonal">Seasonal</button>
+      </div>
+
+      <div class="reveal">
+        <!-- COFFEE -->
+        <div class="menu-panel active" data-panel="coffee">
+          <div class="menu-feature">
+            <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=700&q=80" alt="Maple latte with latte art in a ceramic cup" loading="lazy" />
+            <div class="menu-feature-info">
+              <span class="feat-tag">★ Most Loved</span>
+              <h3>Maple Latte</h3>
+              <div class="feat-price">$5.25</div>
+              <p>Our signature drink — espresso, steamed milk, real maple syrup, and a dusting of cinnamon. The reason a lot of regulars walk through the door.</p>
+            </div>
+          </div>
+          <p class="menu-cat-label">More Coffee</p>
+          <div class="menu-list">
+            <div class="menu-item"><div class="mi-head"><h3>Classic Cappuccino</h3><span class="mi-dots"></span><span class="mi-price">$4.50</span></div><p class="mi-desc">Rich espresso with silky steamed milk and foam.</p></div>
+            <div class="menu-item"><div class="mi-head"><h3>Cold Brew</h3><span class="mi-dots"></span><span class="mi-price">$4.75</span></div><p class="mi-desc">Smooth, slow-steeped coffee served over ice.</p></div>
+            <div class="menu-item"><div class="mi-head"><h3>Flat White</h3><span class="mi-dots"></span><span class="mi-price">$4.75</span></div><p class="mi-desc">Velvety microfoam over a double shot of espresso.</p></div>
+            <div class="menu-item"><div class="mi-head"><h3>Pour Over</h3><span class="mi-dots"></span><span class="mi-price">$4.25</span></div><p class="mi-desc">Single-origin beans, brewed to order.</p></div>
+            <div class="menu-item"><div class="mi-head"><h3>Mocha</h3><span class="mi-dots"></span><span class="mi-price">$5.50</span></div><p class="mi-desc">Espresso, steamed milk, and rich dark chocolate.</p></div>
+            <div class="menu-item"><div class="mi-head"><h3>Americano</h3><span class="mi-dots"></span><span class="mi-price">$3.75</span></div><p class="mi-desc">Espresso over hot water, smooth and bold.</p></div>
+          </div>
+        </div>
+
+        <!-- TEA -->
+        <div class="menu-panel" data-panel="tea">
+          <div class="menu-feature">
+            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=700&q=80" alt="Chai latte with foam in a warm cup" loading="lazy" />
+            <div class="menu-feature-info">
+              <span class="feat-tag">★ Most Loved</span>
+              <h3>Chai Latte</h3>
+              <div class="feat-price">$5.00</div>
+              <p>Spiced black tea steeped with cinnamon, cardamom, and ginger, finished with steamed milk. Cozy in a cup.</p>
+            </div>
+          </div>
+          <p class="menu-cat-label">More Tea</p>
+          <div class="menu-list">
+            <div class="menu-item"><div class="mi-head"><h3>Honey Lavender Tea</h3><span class="mi-dots"></span><span class="mi-price">$4.25</span></div><p class="mi-desc">Floral lavender tea with local honey.</p></div>
+            <div class="menu-item"><div class="mi-head"><h3>Earl Grey</h3><span class="mi-dots"></span><span class="mi-price">$3.75</span></div><p class="mi-desc">Classic black tea with bergamot.</p></div>
+            <div class="menu-item"><div class="mi-head"><h3>Iced Peach Green Tea</h3><span class="mi-dots"></span><span class="mi-price">$4.50</span></div><p class="mi-desc">Refreshing green tea with a hint of peach.</p></div>
+            <div class="menu-item"><div class="mi-head"><h3>Peppermint Herbal</h3><span class="mi-dots"></span><span class="mi-price">$3.75</span></div><p class="mi-desc">Caffeine-free and soothing.</p></div>
+            <div class="menu-item"><div class="mi-head"><h3>Matcha Latte</h3><span class="mi-dots"></span><span class="mi-price">$5.25</span></div><p class="mi-desc">Stone-ground matcha with steamed milk.</p></div>
+            <div class="menu-item"><div class="mi-head"><h3>London Fog</h3><span class="mi-dots"></span><span class="mi-price">$4.75</span></div><p class="mi-desc">Earl grey, vanilla, and steamed milk.</p></div>
+          </div>
+        </div>
+
+        <!-- PASTRIES -->
+        <div class="menu-panel" data-panel="pastries">
+          <div class="menu-feature">
+            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=700&q=80" alt="Fresh butter croissants on a bakery tray" loading="lazy" />
+            <div class="menu-feature-info">
+              <span class="feat-tag">★ Baked Fresh Daily</span>
+              <h3>Butter Croissant</h3>
+              <div class="feat-price">$3.75</div>
+              <p>Laminated by hand and baked every morning — flaky, golden, and buttery all the way through.</p>
+            </div>
+          </div>
+          <p class="menu-cat-label">More Pastries</p>
+          <div class="menu-list">
+            <div class="menu-item"><div class="mi-head"><h3>Blueberry Scone</h3><span class="mi-dots"></span><span class="mi-price">$4.25</span></div><p class="mi-desc">Soft, buttery scone with fresh blueberries.</p></div>
+            <div class="menu-item"><div class="mi-head"><h3>Cinnamon Roll</h3><span class="mi-dots"></span><span class="mi-price">$4.50</span></div><p class="mi-desc">Warm roll with vanilla glaze.</p></div>
+            <div class="menu-item"><div class="mi-head"><h3>Almond Danish</h3><span class="mi-dots"></span><span class="mi-price">$4.25</span></div><p class="mi-desc">Buttery pastry with sweet almond cream.</p></div>
+            <div class="menu-item"><div class="mi-head"><h3>Chocolate Chip Cookie</h3><span class="mi-dots"></span><span class="mi-price">$3.25</span></div><p class="mi-desc">Chewy center, crisp edges, baked all day.</p></div>
+            <div class="menu-item"><div class="mi-head"><h3>Banana Bread Slice</h3><span class="mi-dots"></span><span class="mi-price">$3.75</span></div><p class="mi-desc">Moist banana bread with toasted walnuts.</p></div>
+            <div class="menu-item"><div class="mi-head"><h3>Morning Bun</h3><span class="mi-dots"></span><span class="mi-price">$4.25</span></div><p class="mi-desc">Flaky pastry rolled in orange-cinnamon sugar.</p></div>
+          </div>
+        </div>
+
+        <!-- BREAKFAST -->
+        <div class="menu-panel" data-panel="breakfast">
+          <div class="menu-feature">
+            <img src="https://images.unsplash.com/photo-1588137378633-dea1336ce1e2?auto=format&fit=crop&w=700&q=80" alt="Avocado toast on sourdough with chili flakes" loading="lazy" />
+            <div class="menu-feature-info">
+              <span class="feat-tag">★ Most Loved</span>
+              <h3>Avocado Toast</h3>
+              <div class="feat-price">$8.50</div>
+              <p>Thick-cut sourdough, smashed avocado, chili flakes, flaky salt, and a squeeze of lemon. Add an egg for $1.50.</p>
+            </div>
+          </div>
+          <p class="menu-cat-label">More Breakfast</p>
+          <div class="menu-list">
+            <div class="menu-item"><div class="mi-head"><h3>Maple Breakfast Sandwich</h3><span class="mi-dots"></span><span class="mi-price">$7.75</span></div><p class="mi-desc">Egg, cheddar, and turkey sausage on a toasted bun.</p></div>
+            <div class="menu-item"><div class="mi-head"><h3>Greek Yogurt Bowl</h3><span class="mi-dots"></span><span class="mi-price">$6.50</span></div><p class="mi-desc">Yogurt, granola, seasonal fruit, and honey.</p></div>
+            <div class="menu-item"><div class="mi-head"><h3>Veggie Quiche</h3><span class="mi-dots"></span><span class="mi-price">$7.25</span></div><p class="mi-desc">Flaky crust filled with eggs and garden vegetables.</p></div>
+            <div class="menu-item"><div class="mi-head"><h3>Overnight Oats</h3><span class="mi-dots"></span><span class="mi-price">$6.25</span></div><p class="mi-desc">Rolled oats, chia, maple, and seasonal fruit.</p></div>
+            <div class="menu-item"><div class="mi-head"><h3>Bagel &amp; Cream Cheese</h3><span class="mi-dots"></span><span class="mi-price">$4.50</span></div><p class="mi-desc">Toasted bagel with house cream cheese.</p></div>
+            <div class="menu-item"><div class="mi-head"><h3>Breakfast Burrito</h3><span class="mi-dots"></span><span class="mi-price">$8.25</span></div><p class="mi-desc">Eggs, potato, cheese, and salsa in a warm tortilla.</p></div>
+          </div>
+        </div>
+
+        <!-- SEASONAL -->
+        <div class="menu-panel" data-panel="seasonal">
+          <div class="menu-feature">
+            <img src="https://images.unsplash.com/photo-1517433670267-08bbd4be890f?auto=format&fit=crop&w=700&q=80" alt="Weekend brunch box of assorted pastries" loading="lazy" />
+            <div class="menu-feature-info">
+              <span class="feat-tag">★ Weekends Only</span>
+              <h3>Weekend Brunch Box</h3>
+              <div class="feat-price">$24.00</div>
+              <p>A curated box of croissants, muffins, scones, and seasonal treats — perfect for sharing at home or the office.</p>
+            </div>
+          </div>
+          <p class="menu-cat-label">More Seasonal</p>
+          <div class="menu-list">
+            <div class="menu-item"><div class="mi-head"><h3>Pumpkin Spice Latte</h3><span class="mi-dots"></span><span class="mi-price">$5.50</span></div><p class="mi-desc">Espresso, pumpkin spice, steamed milk, and whipped cream.</p></div>
+            <div class="menu-item"><div class="mi-head"><h3>Apple Cider Donut Muffin</h3><span class="mi-dots"></span><span class="mi-price">$4.75</span></div><p class="mi-desc">Soft muffin with cinnamon sugar topping.</p></div>
+            <div class="menu-item"><div class="mi-head"><h3>Maple Cinnamon Latte</h3><span class="mi-dots"></span><span class="mi-price">$5.50</span></div><p class="mi-desc">Maple syrup, cinnamon, and steamed milk over espresso.</p></div>
+            <div class="menu-item"><div class="mi-head"><h3>Cranberry Orange Scone</h3><span class="mi-dots"></span><span class="mi-price">$4.50</span></div><p class="mi-desc">A buttery seasonal scone with citrus glaze.</p></div>
+            <div class="menu-item"><div class="mi-head"><h3>Hot Spiced Cider</h3><span class="mi-dots"></span><span class="mi-price">$4.25</span></div><p class="mi-desc">Warm apple cider with cinnamon and clove.</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-cta reveal"><a href="contact.html" class="btn btn-primary">Order or Ask a Question
+        <svg width="15" height="15" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a></div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand"><a href="index.html" class="brand"><span class="leaf" aria-hidden="true"></span> Maple &amp; Main</a><p>Fresh coffee, handmade pastries, and a cozy place to gather in the heart of Richmond.</p></div>
+        <div class="footer-col"><h4>Explore</h4><ul><li><a href="about.html">About</a></li><li><a href="menu.html">Menu</a></li><li><a href="catering.html">Catering</a></li><li><a href="visit.html">Visit Us</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div class="footer-col"><h4>Contact</h4><ul><li>123 Maple Street</li><li>Richmond, VA 23220</li><li><a href="mailto:hello@mapleandmaincafe.com">hello@mapleandmaincafe.com</a></li><li><a href="tel:+18045550148">(804) 555-0148</a></li></ul></div>
+        <div class="footer-col"><h4>Follow</h4><ul><li><a href="#">Instagram</a></li><li><a href="#">Facebook</a></li><li><a href="#">TikTok</a></li></ul></div>
+      </div>
+      <div class="footer-bottom"><span>© 2026 Maple &amp; Main Café. A fictional demo.</span><span class="demo-credit">✦ Demo website designed by <a href="../portfolio.html">Volontier</a></span></div>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>

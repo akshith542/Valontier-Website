@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Maple &amp; Main Café — Richmond, VA</title>
+  <meta name="description" content="Get in touch with Maple & Main Café about catering, events, menu questions, or general inquiries in Richmond, VA." />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Volontier" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="leaf.svg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <nav id="nav">
+    <a href="index.html" class="brand"><span class="leaf" aria-hidden="true"></span> Maple &amp; Main</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="catering.html">Catering</a></li>
+      <li><a href="visit.html">Visit Us</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <div class="nav-right"><a href="menu.html" class="btn btn-primary">Order Online</a></div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </nav>
+  <div class="menu-overlay" id="overlay"></div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="menu.html">Menu</a>
+    <a href="catering.html">Catering</a>
+    <a href="visit.html">Visit Us</a>
+    <a href="contact.html" class="active">Contact</a>
+    <a href="menu.html" class="btn btn-primary">Order Online</a>
+  </div>
+
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="crumbs"><a href="index.html">Home</a><span>/</span>Contact</p>
+      <h1>We'd love to <span class="accent">hear from you</span></h1>
+      <p>Send us a message about catering, events, menu questions, or general inquiries.</p>
+    </div>
+  </section>
+
+  <section style="padding-top:64px;">
+    <div class="wrap">
+      <div class="contact-grid">
+        <div class="contact-aside reveal">
+          <span class="eyebrow">Get in Touch</span>
+          <h2>Questions, catering, or just saying hi.</h2>
+          <p>We'll get back to you as soon as we can — usually within a day.</p>
+          <div class="ca-detail"><svg class="line-ic" viewBox="0 0 24 24"><path d="M6.3 4h3.1l1.5 3.8-2 1.4a11 11 0 0 0 4.9 4.9l1.4-2 3.8 1.5v3.1a1.4 1.4 0 0 1-1.5 1.4A15.2 15.2 0 0 1 4.9 6.5 1.4 1.4 0 0 1 6.3 4Z"/></svg><span>(804) 555-0148</span></div>
+          <div class="ca-detail"><svg class="line-ic" viewBox="0 0 24 24"><rect x="3.5" y="5.5" width="17" height="13" rx="2.2"/><path d="m4.2 7 7.8 5.6L19.8 7"/></svg><span>hello@mapleandmaincafe.com</span></div>
+          <div class="ca-detail"><svg class="line-ic" viewBox="0 0 24 24"><path d="M12 21c4-4.2 6.5-7.4 6.5-10.5a6.5 6.5 0 0 0-13 0C5.5 13.6 8 16.8 12 21Z"/><circle cx="12" cy="10.5" r="2.4"/></svg><span>123 Maple Street, Richmond, VA 23220</span></div>
+          <div class="ca-detail"><svg class="line-ic" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.2V12l3.2 1.8"/></svg><span>Mon–Fri 7–5 · Sat–Sun 8–4</span></div>
+        </div>
+        <form id="contactForm" data-demo-form novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@email.com" required />
+            </div>
+            <div class="field">
+              <label for="phone">Phone <span style="font-weight:400;color:var(--muted);">(optional)</span></label>
+              <input type="tel" id="phone" name="phone" placeholder="(804) 555-0000" />
+            </div>
+          </div>
+          <div class="field">
+            <label for="inquiry">Inquiry Type</label>
+            <select id="inquiry" name="inquiry">
+              <option>General question</option>
+              <option>Catering</option>
+              <option>Private event</option>
+              <option>Feedback</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="How can we help?" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message
+            <svg width="15" height="15" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <p class="form-note">Demo form — submissions are not sent anywhere.</p>
+          <div class="form-success" id="formSuccess">
+            <div class="fs-ic">✅</div>
+            <h3>Thanks for reaching out!</h3>
+            <p>This demo form shows how customers could contact Maple &amp; Main Café.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand"><a href="index.html" class="brand"><span class="leaf" aria-hidden="true"></span> Maple &amp; Main</a><p>Fresh coffee, handmade pastries, and a cozy place to gather in the heart of Richmond.</p></div>
+        <div class="footer-col"><h4>Explore</h4><ul><li><a href="about.html">About</a></li><li><a href="menu.html">Menu</a></li><li><a href="catering.html">Catering</a></li><li><a href="visit.html">Visit Us</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div class="footer-col"><h4>Contact</h4><ul><li>123 Maple Street</li><li>Richmond, VA 23220</li><li><a href="mailto:hello@mapleandmaincafe.com">hello@mapleandmaincafe.com</a></li><li><a href="tel:+18045550148">(804) 555-0148</a></li></ul></div>
+        <div class="footer-col"><h4>Follow</h4><ul><li><a href="#">Instagram</a></li><li><a href="#">Facebook</a></li><li><a href="#">TikTok</a></li></ul></div>
+      </div>
+      <div class="footer-bottom"><span>© 2026 Maple &amp; Main Café. A fictional demo.</span><span class="demo-credit">✦ Demo website designed by <a href="../portfolio.html">Volontier</a></span></div>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>

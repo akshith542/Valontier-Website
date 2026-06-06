@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maple &amp; Main Café | Coffee, Pastries &amp; Catering in Richmond, VA</title>
+  <meta name="description" content="Maple & Main Café — handcrafted coffee, fresh-baked pastries, breakfast favorites, and catering in Richmond, Virginia. A cozy neighborhood café." />
+  <meta name="keywords" content="Richmond café, Richmond coffee shop, local café Richmond VA, fresh pastries Richmond, café catering Richmond" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Volontier" />
+  <meta property="og:title" content="Maple & Main Café | Coffee, Pastries & Catering in Richmond, VA" />
+  <meta property="og:description" content="Handcrafted coffee, fresh-baked pastries, and a cozy place to gather in the heart of Richmond." />
+  <!-- Fictional demo business built by Volontier for portfolio purposes. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="leaf.svg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <nav id="nav">
+    <a href="index.html" class="brand"><span class="leaf" aria-hidden="true"></span> Maple &amp; Main</a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="catering.html">Catering</a></li>
+      <li><a href="visit.html">Visit Us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-right"><a href="menu.html" class="btn btn-primary">Order Online</a></div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </nav>
+  <div class="menu-overlay" id="overlay"></div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">About</a>
+    <a href="menu.html">Menu</a>
+    <a href="catering.html">Catering</a>
+    <a href="visit.html">Visit Us</a>
+    <a href="contact.html">Contact</a>
+    <a href="menu.html" class="btn btn-primary">Order Online</a>
+  </div>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-text reveal">
+        <span class="badge"><span class="dot"></span> Locally owned in Richmond, VA</span>
+        <h1>Fresh coffee, handmade pastries, &amp; a <span class="accent">cozy place</span> to gather.</h1>
+        <p class="hero-sub">Welcome to Maple &amp; Main Café — a neighborhood café serving handcrafted drinks, fresh-baked pastries, and everyday comfort in the heart of Richmond.</p>
+        <div class="hero-btns">
+          <a href="menu.html" class="btn btn-primary">View Menu
+            <svg width="15" height="15" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="visit.html" class="btn btn-secondary">Visit Us</a>
+        </div>
+        <div class="hero-meta">
+          <div><strong>Open Today</strong> 7:00 AM – 5:00 PM</div>
+          <div><strong>★ 4.9</strong> Loved by locals</div>
+          <div><strong>Fresh Daily</strong> Baked in-house</div>
+        </div>
+      </div>
+      <div class="hero-visual reveal">
+        <img class="hero-img-main" src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=900&q=80" alt="Latte and croissant on a wooden café table near a sunny window" loading="eager" />
+        <img class="hero-img-float" src="https://images.unsplash.com/photo-1481833761820-0509d3217039?auto=format&fit=crop&w=400&q=80" alt="Display of fresh pastries at Maple & Main Café" loading="lazy" />
+        <div class="hero-chip"><span class="chip-ic"><svg viewBox="0 0 24 24"><path d="M5 8h11v4a4 4 0 0 1-4 4H9a4 4 0 0 1-4-4V8Z"/><path d="M16 9h2.2a2 2 0 0 1 0 4H16"/><path d="M8 3.6c-.4.8 0 1.6 0 2.4M11 3.6c-.4.8 0 1.6 0 2.4"/></svg></span><div><strong>Maple Latte</strong><span>Our house favorite</span></div></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Handcrafted Coffee</span><span class="star">✦</span>
+      <span>Fresh Pastries</span><span class="star">✦</span>
+      <span>Breakfast All Day</span><span class="star">✦</span>
+      <span>Seasonal Specials</span><span class="star">✦</span>
+      <span>Catering &amp; Events</span><span class="star">✦</span>
+      <span>Handcrafted Coffee</span><span class="star">✦</span>
+      <span>Fresh Pastries</span><span class="star">✦</span>
+      <span>Breakfast All Day</span><span class="star">✦</span>
+      <span>Seasonal Specials</span><span class="star">✦</span>
+      <span>Catering &amp; Events</span><span class="star">✦</span>
+    </div>
+  </div>
+
+  <!-- ABOUT TEASER -->
+  <section class="about">
+    <div class="wrap">
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <span class="eyebrow">Our Story</span>
+          <h2>A neighborhood café built around comfort, craft &amp; community.</h2>
+          <p>Maple &amp; Main Café was created as a place where people could slow down, enjoy something fresh, and feel at home. From our morning espresso to our weekend pastries, everything we serve is made with care — inspired by the Richmond community around us.</p>
+          <a href="about.html" class="btn btn-secondary" style="margin-top:8px;">Read Our Story
+            <svg width="15" height="15" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+        <img class="about-img reveal" src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=900&q=80" alt="Warm interior seating area at Maple & Main Café with natural light" loading="lazy" />
+      </div>
+      <div class="highlights">
+        <div class="hl-card reveal"><div class="feat-ic"><svg viewBox="0 0 24 24"><path d="M4 11l8-6.5 8 6.5"/><path d="M6 9.8V19h12V9.8"/><path d="M10 19v-5h4v5"/></svg></div><h3>Locally Owned</h3><p>Built by Richmond locals with a love for community and good coffee.</p></div>
+        <div class="hl-card reveal"><div class="feat-ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3.8"/><path d="M12 3v2.2M12 18.8V21M3 12h2.2M18.8 12H21M5.6 5.6l1.6 1.6M16.8 16.8l1.6 1.6M18.4 5.6l-1.6 1.6M7.2 16.8l-1.6 1.6"/></svg></div><h3>Fresh Daily</h3><p>Pastries, breakfast bites, and seasonal favorites made fresh every morning.</p></div>
+        <div class="hl-card reveal"><div class="feat-ic"><svg viewBox="0 0 24 24"><path d="M5 11V9.5A2.5 2.5 0 0 1 7.5 7h9A2.5 2.5 0 0 1 19 9.5V11"/><path d="M4 11.5A2 2 0 0 1 6 13.5V16h12v-2.5a2 2 0 0 1 2-2"/><path d="M6 18v1.5M18 18v1.5"/><path d="M6 16v-2.5h12V16"/></svg></div><h3>Cozy Atmosphere</h3><p>A welcoming space for work, conversation, and connection.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED FAVORITES -->
+  <section>
+    <div class="wrap">
+      <div class="section-head center reveal">
+        <span class="eyebrow">Customer Favorites</span>
+        <h2>A few things people love</h2>
+        <p>From handcrafted lattes to fresh pastries — a taste of what's waiting for you on the full menu.</p>
+      </div>
+      <div class="fav-grid">
+        <article class="fav-card reveal">
+          <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=700&q=80" alt="Maple latte with latte art" loading="lazy" />
+          <div class="fav-body"><div class="mi-head"><h3>Maple Latte</h3><span class="mi-dots"></span><span class="mi-price">$5.25</span></div><p class="mi-desc">Espresso, steamed milk, maple syrup, and cinnamon.</p></div>
+        </article>
+        <article class="fav-card reveal">
+          <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=700&q=80" alt="Fresh butter croissants" loading="lazy" />
+          <div class="fav-body"><div class="mi-head"><h3>Butter Croissant</h3><span class="mi-dots"></span><span class="mi-price">$3.75</span></div><p class="mi-desc">Flaky, golden, and baked fresh daily.</p></div>
+        </article>
+        <article class="fav-card reveal">
+          <img src="https://images.unsplash.com/photo-1588137378633-dea1336ce1e2?auto=format&fit=crop&w=700&q=80" alt="Avocado toast on sourdough" loading="lazy" />
+          <div class="fav-body"><div class="mi-head"><h3>Avocado Toast</h3><span class="mi-dots"></span><span class="mi-price">$8.50</span></div><p class="mi-desc">Sourdough, avocado, chili flakes, and lemon.</p></div>
+        </article>
+      </div>
+      <div class="menu-cta reveal"><a href="menu.html" class="btn btn-primary">See the Full Menu
+        <svg width="15" height="15" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a></div>
+    </div>
+  </section>
+
+  <!-- SEASONAL SPECIALS -->
+  <section class="specials">
+    <div class="wrap">
+      <div class="section-head center reveal">
+        <span class="eyebrow">Limited Time</span>
+        <h2>This Season at Maple &amp; Main</h2>
+        <p>Try our seasonal drinks, fresh pastries, and limited-time favorites made for cozy mornings and afternoon breaks.</p>
+      </div>
+      <div class="specials-grid">
+        <article class="special-card reveal">
+          <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=700&q=80" alt="Maple cinnamon latte with latte art" loading="lazy" />
+          <div class="sc-body"><span class="sc-tag">Seasonal Drink</span><h3>Maple Cinnamon Latte</h3><p>A warm espresso drink with maple syrup, cinnamon, and steamed milk.</p></div>
+        </article>
+        <article class="special-card reveal">
+          <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=700&q=80" alt="Freshly baked cranberry orange scones" loading="lazy" />
+          <div class="sc-body"><span class="sc-tag">Fresh Bake</span><h3>Cranberry Orange Scone</h3><p>A buttery seasonal scone with a bright citrus glaze.</p></div>
+        </article>
+        <article class="special-card reveal">
+          <img src="https://images.unsplash.com/photo-1517433670267-08bbd4be890f?auto=format&fit=crop&w=700&q=80" alt="Weekend brunch pastry box for sharing" loading="lazy" />
+          <div class="sc-body"><span class="sc-tag">Weekends Only</span><h3>Weekend Brunch Box</h3><p>A curated pastry box perfect for sharing with friends or family.</p></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="reviews">
+    <div class="wrap">
+      <div class="section-head center reveal"><span class="eyebrow">Testimonials</span><h2>Loved by locals</h2></div>
+      <div class="reviews-grid">
+        <article class="review-card reveal"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><p>"Maple &amp; Main is my go-to morning stop. The coffee is always perfect, and the space feels so welcoming."</p><div class="reviewer"><span class="avatar">J</span><span>Jenna R.</span></div></article>
+        <article class="review-card reveal"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><p>"The pastries are amazing, especially the croissants. It feels like a neighborhood spot that actually cares."</p><div class="reviewer"><span class="avatar">M</span><span>Marcus T.</span></div></article>
+        <article class="review-card reveal"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><p>"I come here to study almost every weekend. Great drinks, calm atmosphere, and the staff is always kind."</p><div class="reviewer"><span class="avatar">P</span><span>Priya S.</span></div></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATERING CTA BAND -->
+  <section class="cta-band">
+    <div class="wrap reveal">
+      <h2>Coffee &amp; pastries for your next event</h2>
+      <p>Office breakfasts, event pastry boxes, and coffee travelers for groups of all sizes — made fresh by Maple &amp; Main.</p>
+      <a href="catering.html" class="btn btn-light">Explore Catering
+        <svg width="15" height="15" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand"><span class="leaf" aria-hidden="true"></span> Maple &amp; Main</a>
+          <p>Fresh coffee, handmade pastries, and a cozy place to gather in the heart of Richmond.</p>
+        </div>
+        <div class="footer-col"><h4>Explore</h4><ul><li><a href="about.html">About</a></li><li><a href="menu.html">Menu</a></li><li><a href="catering.html">Catering</a></li><li><a href="visit.html">Visit Us</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div class="footer-col"><h4>Contact</h4><ul><li>123 Maple Street</li><li>Richmond, VA 23220</li><li><a href="mailto:hello@mapleandmaincafe.com">hello@mapleandmaincafe.com</a></li><li><a href="tel:+18045550148">(804) 555-0148</a></li></ul></div>
+        <div class="footer-col"><h4>Follow</h4><ul><li><a href="#">Instagram</a></li><li><a href="#">Facebook</a></li><li><a href="#">TikTok</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Maple &amp; Main Café. A fictional demo.</span>
+        <span class="demo-credit">✦ Demo website designed by <a href="../portfolio.html">Volontier</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
