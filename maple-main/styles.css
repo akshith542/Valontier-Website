@@ -21,7 +21,7 @@
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
-html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+html { scroll-behavior: smooth; scroll-padding-top: 122px; }
 
 body {
   font-family: 'Manrope', system-ui, sans-serif;
@@ -81,9 +81,19 @@ section { padding: 100px 0; }
 .btn-light { background: var(--white); color: var(--warm-brown); }
 .btn-light:hover { transform: translateY(-2px); box-shadow: var(--shadow); }
 
+/* ---------- Demo disclaimer banner ---------- */
+.demo-banner {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 95;
+  height: 34px; display: grid; place-items: center;
+  background: var(--warm-brown); color: var(--cream);
+  font-size: clamp(0.66rem, 2.7vw, 0.78rem); font-weight: 600;
+  letter-spacing: 0.01em; text-align: center; padding: 0 14px;
+  white-space: nowrap; overflow: hidden;
+}
+
 /* ---------- Nav ---------- */
 nav {
-  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  position: fixed; top: 34px; left: 0; right: 0; z-index: 100;
   display: flex; align-items: center; justify-content: space-between;
   padding: 18px 32px;
   background: rgba(248, 241, 231, 0.82);
@@ -462,7 +472,7 @@ footer { background: var(--dark); color: rgba(248,241,231,0.75); padding: 70px 0
   .wrap { padding: 0 20px; }
 
   /* Hero — tighter spacing & smaller type so it reads solid on phones */
-  .hero { padding: 100px 0 44px; }
+  .hero { padding: 122px 0 44px; }
   .hero-grid { gap: 24px; }
   .hero-visual { max-width: 100%; }
   .hero h1 { font-size: clamp(1.95rem, 8.5vw, 2.8rem); margin-bottom: 16px; }
@@ -477,7 +487,7 @@ footer { background: var(--dark); color: rgba(248,241,231,0.75); padding: 70px 0
   .hero-chip strong { font-size: 0.9rem; }
 
   /* Interior page heroes */
-  .page-hero { padding: 108px 0 46px; }
+  .page-hero { padding: 130px 0 46px; }
   .page-hero h1 { font-size: clamp(1.95rem, 7.5vw, 2.8rem); }
   .page-hero p { font-size: 1.02rem; }
 
