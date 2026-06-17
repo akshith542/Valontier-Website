@@ -720,6 +720,29 @@
   letter-spacing: 0.02em;
 }
 
+/* Second spotlight — alternating layout (preview on the left) */
+.live-demo.alt { padding-top: 0; }
+@media (min-width: 1101px) {
+  .live-demo.alt .ld-inner { grid-template-columns: 1.05fr 0.95fr; }
+}
+
+/* Green-accented spotlight (GreenHaven) */
+.live-demo.green .ld-inner {
+  background: linear-gradient(150deg, #F2F6EC 0%, #E2EDD8 100%);
+  border-color: rgba(47,107,63,0.1);
+}
+.live-demo.green .ld-badge { background: rgba(47,107,63,0.12); color: #2F6B3F; }
+.live-demo.green .ld-title { color: #173B24; }
+.live-demo.green .ld-title em { color: #2F6B3F; }
+.live-demo.green .ld-desc { color: #4A5A4E; }
+.live-demo.green .ld-desc em { color: #173B24; }
+.live-demo.green .ld-features li { color: #2F5235; }
+.live-demo.green .ld-features li::before { color: #2F6B3F; }
+.live-demo.green .btn-primary { background: #2F6B3F; }
+.live-demo.green .btn-primary:hover { background: #173B24; }
+.live-demo.green .ld-preview-tag { color: #173B24; }
+.live-demo.green .ld-launch { color: #2F6B3F; }
+
 /* ========================
    RESPONSIVE
    ======================== */

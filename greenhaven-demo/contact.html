@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | GreenHaven Landscaping — Demo by Volontier</title>
+  <meta name="description" content="Request a free quote on this fictional GreenHaven Landscaping demo by Volontier. The contact form is for demonstration only and does not reach a real business." />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Volontier" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Contact | GreenHaven Landscaping — Demo by Volontier" />
+  <!-- Fictional demo business built by Volontier for portfolio purposes. No services are offered. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="leaf.svg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="demo-banner" role="note"><span><strong>Demo Website:</strong> A fictional mock business built by Volontier for portfolio &amp; design demonstration — no services are offered.</span></div>
+
+  <nav id="nav">
+    <a href="index.html" class="brand"><span class="leaf" aria-hidden="true"></span> GreenHaven</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <div class="nav-right"><a href="contact.html" class="btn btn-primary">Get a Free Quote</a></div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </nav>
+  <div class="menu-overlay" id="overlay"></div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="contact.html" class="active">Contact</a>
+    <a href="contact.html" class="btn btn-primary">Get a Free Quote</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="crumbs"><a href="index.html">Home</a><span>/</span>Contact</p>
+      <h1>Request a <span class="accent">free quote</span></h1>
+      <p>Tell us what kind of outdoor project you need help with, and we'll send over a simple quote.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact">
+    <div class="wrap">
+      <div class="contact-grid">
+        <div class="contact-aside reveal">
+          <span class="eyebrow">Get in Touch</span>
+          <h2>Tell us about your outdoor project.</h2>
+          <p>Share a few details about the space you'd like help with, and we'll put together a simple quote.</p>
+          <div class="ca-detail"><svg class="hd-ic"><use href="icons.svg#ic-phone"></use></svg><span>(555) 123-4567</span></div>
+          <div class="ca-detail"><svg class="hd-ic"><use href="icons.svg#ic-mail"></use></svg><span>hello@example.com</span></div>
+          <div class="ca-detail"><svg class="hd-ic"><use href="icons.svg#ic-pin"></use></svg><span>Richmond, VA · Sample Service Area</span></div>
+          <p class="demo-note"><strong>Demo Notice:</strong> This form is for demonstration only and does not contact a real business. GreenHaven Landscaping is a fictional company and the contact details above are placeholders.</p>
+        </div>
+        <form id="quoteForm" data-demo-form novalidate>
+          <div class="field-row">
+            <div class="field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@email.com" required />
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000" />
+            </div>
+            <div class="field">
+              <label for="contact-method">Preferred contact method</label>
+              <select id="contact-method" name="contact-method">
+                <option>Email</option>
+                <option>Phone</option>
+                <option>Either is fine</option>
+              </select>
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="service">Service needed</label>
+              <select id="service" name="service">
+                <option>Lawn care</option>
+                <option>Garden design</option>
+                <option>Mulching</option>
+                <option>Seasonal cleanup</option>
+                <option>Hedge / shrub trimming</option>
+                <option>Full property refresh</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="property">Property type</label>
+              <select id="property" name="property">
+                <option>Home / residential</option>
+                <option>Rental property</option>
+                <option>Commercial property</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell us a little about your yard or project..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit Demo Request
+            <svg width="15" height="15" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <p class="form-note">Demo form — submissions are not sent anywhere.</p>
+          <div class="form-success" id="formSuccess">
+            <div class="fs-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4 10-10"/></svg></div>
+            <h3>Demo form submitted!</h3>
+            <p>This is a portfolio example and no real request was sent. It shows how a customer could request a quote from GreenHaven.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand"><span class="leaf" aria-hidden="true"></span> GreenHaven</a>
+          <p>Beautiful outdoor spaces, made simple. Landscaping, lawn care &amp; seasonal cleanup for homes and local properties.</p>
+        </div>
+        <div class="footer-col"><h4>Navigation</h4><ul><li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div class="footer-col"><h4>Demo Contact</h4><ul><li><a href="mailto:hello@example.com">hello@example.com</a></li><li><a href="tel:+15551234567">(555) 123-4567</a></li><li>Richmond, VA</li></ul></div>
+        <div class="footer-col"><h4>Credit</h4><ul><li>Website demo created by Volontier.</li><li><a href="../portfolio.html">View Volontier portfolio</a></li></ul></div>
+      </div>
+      <p class="footer-disclaimer"><strong>Disclaimer:</strong> GreenHaven Landscaping is a fictional business created by Volontier as a portfolio demo. No services are being offered, and all content, pricing, testimonials, and contact details are sample/demo content.</p>
+      <div class="footer-bottom">
+        <span>© 2026 Volontier. GreenHaven Landscaping is a fictional demo — not a real business.</span>
+        <span class="demo-credit">✦ Demo website designed by <a href="../portfolio.html">Volontier</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>

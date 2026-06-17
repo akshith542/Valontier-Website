@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GreenHaven Landscaping | Demo Website by Volontier</title>
+  <meta name="description" content="A fictional landscaping business website created by Volontier to showcase modern small business web design — services, gallery, pricing, and contact form layouts." />
+  <meta name="keywords" content="landscaping website demo, lawn care web design, small business website template, Volontier portfolio" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Volontier" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="GreenHaven Landscaping | Demo Website by Volontier" />
+  <meta property="og:description" content="Beautiful outdoor spaces, made simple — a portfolio demo by Volontier showing a full small-business landscaping website." />
+  <!-- Fictional demo business built by Volontier for portfolio purposes. No services are offered. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="leaf.svg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="demo-banner" role="note"><span><strong>Demo Website:</strong> A fictional mock business built by Volontier for portfolio &amp; design demonstration — no services are offered.</span></div>
+
+  <nav id="nav">
+    <a href="index.html" class="brand"><span class="leaf" aria-hidden="true"></span> GreenHaven</a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-right"><a href="contact.html" class="btn btn-primary">Get a Free Quote</a></div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </nav>
+  <div class="menu-overlay" id="overlay"></div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html" class="active">Home</a>
+    <a href="services.html">Services</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="btn btn-primary">Get a Free Quote</a>
+  </div>
+
+  <!-- HERO -->
+  <header class="hero" id="home">
+    <div class="wrap hero-grid">
+      <div class="hero-text reveal">
+        <span class="badge"><span class="dot"></span> Serving homes &amp; properties in Richmond, VA</span>
+        <h1>Beautiful outdoor spaces, <span class="accent">made simple.</span></h1>
+        <p class="hero-sub">Reliable landscaping, lawn care, and seasonal cleanup services for homes and local properties — handled by a friendly, detail-oriented local team.</p>
+        <div class="hero-btns">
+          <a href="contact.html" class="btn btn-primary">Get a Free Quote
+            <svg width="15" height="15" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="services.html" class="btn btn-secondary">View Our Services</a>
+        </div>
+        <div class="hero-meta">
+          <div><strong>Same-week</strong> booking available</div>
+          <div><strong>Free</strong> on-site quotes</div>
+          <div><strong>Eco-conscious</strong> yard care</div>
+        </div>
+      </div>
+      <div class="hero-visual reveal">
+        <img class="hero-img-main" src="https://images.unsplash.com/photo-1689728318937-17d24bc0a65c?auto=format&fit=crop&w=900&q=80" alt="Landscaper trimming the edge of a healthy green lawn on a sunny day" loading="eager" />
+        <img class="hero-img-float" src="https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&fit=crop&w=400&q=80" alt="Close-up of a freshly maintained, lush green lawn" loading="lazy" />
+      </div>
+    </div>
+  </header>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Lawn Care</span><span class="star">✦</span>
+      <span>Garden Design</span><span class="star">✦</span>
+      <span>Mulching</span><span class="star">✦</span>
+      <span>Seasonal Cleanup</span><span class="star">✦</span>
+      <span>Hedge Trimming</span><span class="star">✦</span>
+      <span>Property Refresh</span><span class="star">✦</span>
+      <span>Lawn Care</span><span class="star">✦</span>
+      <span>Garden Design</span><span class="star">✦</span>
+      <span>Mulching</span><span class="star">✦</span>
+      <span>Seasonal Cleanup</span><span class="star">✦</span>
+      <span>Hedge Trimming</span><span class="star">✦</span>
+      <span>Property Refresh</span><span class="star">✦</span>
+    </div>
+  </div>
+
+  <!-- SERVICES SHOWCASE (interactive) -->
+  <section class="services-showcase">
+    <div class="wrap">
+      <div class="section-head center reveal">
+        <span class="eyebrow">Our Landscaping Services</span>
+        <h2>Everything your yard needs, in one place</h2>
+        <p>Hover or tap a service to take a closer look — from routine lawn care to a full property refresh.</p>
+      </div>
+      <div class="showcase reveal">
+        <div class="showcase-list" id="showcaseList">
+          <button class="sc-item active" type="button"
+            data-img="https://images.unsplash.com/photo-1690068023694-053da714f95f?auto=format&fit=crop&w=900&q=80"
+            data-title="Lawn Care"
+            data-desc="Weekly and biweekly mowing, edging, trimming, and ongoing yard maintenance that keeps every visit looking sharp.">
+            <span class="sc-num">01</span>
+            <span class="sc-text"><strong>Lawn Care</strong><span>Mowing, edging &amp; upkeep</span></span>
+            <span class="sc-arrow" aria-hidden="true">→</span>
+          </button>
+          <button class="sc-item" type="button"
+            data-img="https://images.unsplash.com/photo-1724556295135-ff92b9aa0a55?auto=format&fit=crop&w=900&q=80"
+            data-title="Garden Design"
+            data-desc="Simple, beautiful planting layouts for front yards, flower beds, and outdoor spaces that suit your style.">
+            <span class="sc-num">02</span>
+            <span class="sc-text"><strong>Garden Design</strong><span>Planting &amp; flower beds</span></span>
+            <span class="sc-arrow" aria-hidden="true">→</span>
+          </button>
+          <button class="sc-item" type="button"
+            data-img="https://images.unsplash.com/photo-1628482283044-e5cc2f238de1?auto=format&fit=crop&w=900&q=80"
+            data-title="Mulching"
+            data-desc="Fresh mulch installation to improve curb appeal, lock in moisture, and protect your garden beds year-round.">
+            <span class="sc-num">03</span>
+            <span class="sc-text"><strong>Mulching</strong><span>Beds &amp; curb appeal</span></span>
+            <span class="sc-arrow" aria-hidden="true">→</span>
+          </button>
+          <button class="sc-item" type="button"
+            data-img="https://images.unsplash.com/photo-1605740859531-9080cc2440df?auto=format&fit=crop&w=900&q=80"
+            data-title="Seasonal Cleanup"
+            data-desc="Leaf removal, spring and fall cleanups, debris clearing, and full yard refreshes for every season.">
+            <span class="sc-num">04</span>
+            <span class="sc-text"><strong>Seasonal Cleanup</strong><span>Spring &amp; fall resets</span></span>
+            <span class="sc-arrow" aria-hidden="true">→</span>
+          </button>
+          <button class="sc-item" type="button"
+            data-img="https://images.unsplash.com/photo-1667140092555-b0ca51dc69d7?auto=format&fit=crop&w=900&q=80"
+            data-title="Hedge &amp; Shrub Trimming"
+            data-desc="Clean shaping and maintenance for bushes, hedges, and small ornamental trees — trimmings hauled away.">
+            <span class="sc-num">05</span>
+            <span class="sc-text"><strong>Hedge &amp; Shrub Trimming</strong><span>Shaping &amp; upkeep</span></span>
+            <span class="sc-arrow" aria-hidden="true">→</span>
+          </button>
+          <button class="sc-item" type="button"
+            data-img="https://images.unsplash.com/photo-1704457030496-3463cf1b8650?auto=format&fit=crop&w=900&q=80"
+            data-title="Property Refresh"
+            data-desc="A full outdoor refresh for homes preparing to sell, rent, or host — lawn, beds, trimming, and a final walkthrough.">
+            <span class="sc-num">06</span>
+            <span class="sc-text"><strong>Property Refresh</strong><span>Sale &amp; event ready</span></span>
+            <span class="sc-arrow" aria-hidden="true">→</span>
+          </button>
+        </div>
+        <div class="showcase-visual">
+          <img id="scImg" src="https://images.unsplash.com/photo-1690068023694-053da714f95f?auto=format&fit=crop&w=900&q=80" alt="Selected GreenHaven landscaping service" />
+          <div class="sc-caption">
+            <h3 id="scTitle">Lawn Care</h3>
+            <p id="scDesc">Weekly and biweekly mowing, edging, trimming, and ongoing yard maintenance that keeps every visit looking sharp.</p>
+          </div>
+        </div>
+      </div>
+      <div class="services-more reveal">
+        <a href="services.html" class="btn btn-secondary">See all our services
+          <svg width="15" height="15" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="wrap">
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <span class="eyebrow">About GreenHaven</span>
+          <h2>Local, reliable, and detail-oriented.</h2>
+          <p>GreenHaven Landscaping is built around simple, dependable outdoor care. From small yard cleanups to full seasonal refreshes, our goal is to help every property look polished — without making the process complicated.</p>
+          <div class="trust-list">
+            <div class="trust-item"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4 10-10"/></svg></span><span>Friendly local service</span></div>
+            <div class="trust-item"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4 10-10"/></svg></span><span>Clear pricing and communication</span></div>
+            <div class="trust-item"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4 10-10"/></svg></span><span>Eco-conscious yard care options</span></div>
+          </div>
+        </div>
+        <div class="about-visual reveal">
+          <img class="about-img" src="https://images.unsplash.com/photo-1605117882932-f9e32b03fea9?auto=format&fit=crop&w=900&q=80" alt="GreenHaven team member edging a lawn beside a tidy brick garden path" loading="lazy" />
+          <div class="about-stat"><strong>Local</strong><span>Richmond-based team</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="why" id="why">
+    <div class="wrap">
+      <div class="why-layout">
+        <div class="why-visual reveal">
+          <img src="https://images.unsplash.com/photo-1598902108854-10e335adac99?auto=format&fit=crop&w=900&q=80" alt="A lush, well-kept green garden with mature plantings" loading="lazy" />
+        </div>
+        <div class="why-content reveal">
+          <span class="eyebrow">Why GreenHaven</span>
+          <h2>Why homeowners choose us</h2>
+          <div class="why-points">
+            <div class="why-point">
+              <span class="wp-num">01</span>
+              <div><h3>Reliable Scheduling</h3><p>Clear appointment times and consistent, on-time service you can count on.</p></div>
+            </div>
+            <div class="why-point">
+              <span class="wp-num">02</span>
+              <div><h3>Clean, Professional Work</h3><p>Every project is finished with care and attention to the small details.</p></div>
+            </div>
+            <div class="why-point">
+              <span class="wp-num">03</span>
+              <div><h3>Easy Communication</h3><p>Simple quotes, clear updates, and no confusing process from start to finish.</p></div>
+            </div>
+            <div class="why-point">
+              <span class="wp-num">04</span>
+              <div><h3>Eco-Conscious Options</h3><p>Planting and maintenance options designed with sustainability in mind.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="reviews" id="reviews">
+    <div class="wrap">
+      <div class="section-head center reveal">
+        <span class="eyebrow">What Customers Are Saying</span>
+        <h2>Loved by local homeowners</h2>
+        <span class="notice">✦ Sample testimonials for demo purposes only</span>
+      </div>
+      <div class="reviews-grid">
+        <article class="review-card reveal">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p>"GreenHaven made our front yard look clean and refreshed in one afternoon."</p>
+          <div class="reviewer"><span class="avatar">S</span><span>Sample Customer<small>Demo testimonial</small></span></div>
+        </article>
+        <article class="review-card reveal">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p>"The process was simple, professional, and easy to understand from start to finish."</p>
+          <div class="reviewer"><span class="avatar">S</span><span>Sample Customer<small>Demo testimonial</small></span></div>
+        </article>
+        <article class="review-card reveal">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p>"Our garden beds looked brand new after the cleanup. We'll definitely book again."</p>
+          <div class="reviewer"><span class="avatar">S</span><span>Sample Customer<small>Demo testimonial</small></span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <section class="cta-band">
+    <div class="wrap reveal">
+      <h2>Ready for an easier, better-looking yard?</h2>
+      <p>Get a friendly, no-pressure quote and see how simple outdoor care can be with GreenHaven.</p>
+      <a href="contact.html" class="btn btn-light">Get a Free Quote
+        <svg width="15" height="15" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand"><span class="leaf" aria-hidden="true"></span> GreenHaven</a>
+          <p>Beautiful outdoor spaces, made simple. Landscaping, lawn care &amp; seasonal cleanup for homes and local properties.</p>
+        </div>
+        <div class="footer-col"><h4>Navigation</h4><ul><li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div class="footer-col"><h4>Demo Contact</h4><ul><li><a href="mailto:hello@example.com">hello@example.com</a></li><li><a href="tel:+15551234567">(555) 123-4567</a></li><li>Richmond, VA</li></ul></div>
+        <div class="footer-col"><h4>Credit</h4><ul><li>Website demo created by Volontier.</li><li><a href="../portfolio.html">View Volontier portfolio</a></li></ul></div>
+      </div>
+      <p class="footer-disclaimer"><strong>Disclaimer:</strong> GreenHaven Landscaping is a fictional business created by Volontier as a portfolio demo. No services are being offered, and all content, pricing, testimonials, and contact details are sample/demo content.</p>
+      <div class="footer-bottom">
+        <span>© 2026 Volontier. GreenHaven Landscaping is a fictional demo — not a real business.</span>
+        <span class="demo-credit">✦ Demo website designed by <a href="../portfolio.html">Volontier</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>

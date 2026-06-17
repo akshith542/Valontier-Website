@@ -49,6 +49,36 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://volontier.com/greenhaven-demo/index.html</loc>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://volontier.com/greenhaven-demo/services.html</loc>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://volontier.com/greenhaven-demo/gallery.html</loc>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://volontier.com/greenhaven-demo/pricing.html</loc>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://volontier.com/greenhaven-demo/contact.html</loc>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://volontier.com/signup.html</loc>
     <lastmod>2026-04-16</lastmod>
     <changefreq>monthly</changefreq>
